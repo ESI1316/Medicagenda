@@ -3,15 +3,14 @@
 \usepackage[utf8]{inputenc}                                                      
 \usepackage[french]{babel}                                                       
 \usepackage[T1]{fontenc}  
-
 \usepackage[utf8]{inputenc}                                                      
 \usepackage[french]{babel}                                                       
 \usepackage[T1]{fontenc}                                                         
 \usepackage[pdftex]{graphicx}                                                    
 \usepackage{url}                                                                 
-
+\usepackage{longtable}
 \usepackage[bookmarks, colorlinks=false, pdfborder={0 0 0},
-	pdftitle={Starlight}, 
+	pdftitle={Medicagenda}, 
 	pdfauthor={Knop Florian, Kriwin Paul, Placentino Simon},
 	pdfsubject={Medicagenda},           
 pdfkeywords={UML, ISO/IEC 14882:2011, Medicagenda, Projet, analyse, ESI}]{hyperref}   
@@ -63,6 +62,59 @@ pdfkeywords={UML, ISO/IEC 14882:2011, Medicagenda, Projet, analyse, ESI}]{hyperr
 \subsubsection{Contraintes d'intégrité}
 \newpage
 \section{Dictionnaire des données}
+
+\begin{center}
+\begin{longtable}{|p{2cm}|p{2cm}|p{3cm}|p{2cm}|p{2cm}|p{2cm}|}
+		\hline
+		Nom & Classe & Définition & Type & Domaine & CI \\
+		\hline
+		annulé & Rendez-vous & \parbox[t]{3cm}{Vrai si le rendez-vous a été annulé\\} &
+        Booléen & Vrai ou faux & Aucune \\
+		\hline
+        adresse & Compte & \parbox[t]{3cm}{L'adresse du titulaire du compte\\} & Chaîne 
+        & \parbox[t]{2cm}{Toutes adresses valables\\} & Aucune \\
+        \hline
+        année & Date & L'année de la date & Entier & \parbox[t]{2cm}{Toutes\\les valeurs\\} & Aucune \\
+        \hline
+        date & Evènement & \parbox[t]{3cm}{La date de l'évènement\\} & Date & \parbox[t]{2cm}{Aucun\\ domaine particulier\\} &
+        Aucune \\
+        \hline
+        début & Evènement & \parbox[t]{3cm}{L'heure de début de l'évènement\\} & Moment & \parbox[t]{2cm}{Aucun\\ domaine particulier\\} &
+        Aucune \\
+        \hline
+        e-mail & Compte & \parbox[t]{3cm}{L'e-mail du titulaire du compte\\} & Chaîne & \parbox[t]{2cm}{Aucun\\ domaine particulier\\}
+        & \parbox[t]{2cm}{E-Mail\\ valide} \\
+        \hline
+        fin & Evènement & \parbox[t]{3cm}{L'heure de fin de l'évènement\\} & Moment & \parbox[t]{2cm}{Aucun\\ domaine particulier\\} &
+        Aucune \\
+        \hline
+        heure & Moment & \parbox[t]{3cm}{L'heure du\\moment\\} & Entier & Valeur de 0 à 23 &
+        Aucune \\
+        \hline
+        INAMI & Compte mèdecin & \parbox[t]{3cm}{Le numéro \\INAMI du mèdecin\\} & Entier & \parbox[t]{2cm}{Aucun\\ domaine particulier\\}
+        & Aucune \\
+        \hline
+        jour & Date & Le jour de la date & Entier & 1 à 31 & \parbox[t]{2cm}{Valeur \\correcte du jour selon\\ le mois\\} \\
+        \hline
+        minute & Moment & \parbox[t]{3cm}{La minute de\\ l'heure du\\ moment\\} & Entier & Valeur de 0 à 59 &
+        Aucune \\
+        \hline
+        mois & Date & Le mois de la date & Entier & Valeur de 1 à 12 & Aucune \\
+        \hline
+        motif & Rendez-vous & \parbox[t]{3cm}{Le motif \\du rendez-vous\\} & Chaîne & \parbox[t]{2cm}{Aucun\\ domaine particulier\\}
+        & Aucune \\
+        \hline
+        nom & Compte & \parbox[t]{3cm}{Le nom du titulaire du compte\\} & Chaîne & \parbox[t]{2cm}{Aucun\\ domaine particulier\\}
+        & Aucune \\
+        \hline
+        prénom & Compte & \parbox[t]{3cm}{Le prénom du titulaire du compte\\} & Chaîne & \parbox[t]{2cm}{Aucun\\ domaine particulier\\}
+        & Aucune \\
+        \hline
+        type & Spécialité & \parbox[t]{3cm}{Le type de\\ la spécialité\\} & Chaîne & \parbox[t]{2cm}{Les types\\ valables\\} & Aucune\\
+        \hline
+        
+\end{longtable}
+\end{center}
 
 
 \end{document}
