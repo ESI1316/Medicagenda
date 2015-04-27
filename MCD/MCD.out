@@ -1,4 +1,4 @@
-\BOOKMARK [0][-]{chapter.1}{nom\137projet - Mod\350le conceptuel des donn\351es}{}% 1
+\BOOKMARK [0][-]{chapter.1}{Mod\350le conceptuel des donn\351es}{}% 1
 \BOOKMARK [1][-]{section.1.1}{Introduction}{chapter.1}% 2
 \BOOKMARK [2][-]{subsection.1.1.1}{Objectifs du document}{section.1.1}% 3
 \BOOKMARK [2][-]{subsection.1.1.2}{Domaine de d\351finition du document}{section.1.1}% 4
@@ -6,7 +6,18 @@
 \BOOKMARK [2][-]{subsection.1.1.4}{R\351f\351rences}{section.1.1}% 6
 \BOOKMARK [1][-]{section.1.2}{Diagramme\(s\) de classe\(s\)}{chapter.1}% 7
 \BOOKMARK [1][-]{section.1.3}{Classe\(s\)}{chapter.1}% 8
-\BOOKMARK [2][-]{subsection.1.3.1}{Classe\1371}{section.1.3}% 9
-\BOOKMARK [1][-]{section.1.4}{Associations}{chapter.1}% 10
-\BOOKMARK [2][-]{subsection.1.4.1}{Association\1371}{section.1.4}% 11
-\BOOKMARK [1][-]{section.1.5}{Dictionnaire des donn\351es}{chapter.1}% 12
+\BOOKMARK [2][-]{subsection.1.3.1}{Calendrier}{section.1.3}% 9
+\BOOKMARK [2][-]{subsection.1.3.2}{Compte}{section.1.3}% 10
+\BOOKMARK [2][-]{subsection.1.3.3}{Compte m\350decin}{section.1.3}% 11
+\BOOKMARK [2][-]{subsection.1.3.4}{Compte patient}{section.1.3}% 12
+\BOOKMARK [2][-]{subsection.1.3.5}{Date}{section.1.3}% 13
+\BOOKMARK [2][-]{subsection.1.3.6}{Disponibilit\351}{section.1.3}% 14
+\BOOKMARK [2][-]{subsection.1.3.7}{Ev\350nement}{section.1.3}% 15
+\BOOKMARK [2][-]{subsection.1.3.8}{M\350decin}{section.1.3}% 16
+\BOOKMARK [2][-]{subsection.1.3.9}{Moment}{section.1.3}% 17
+\BOOKMARK [2][-]{subsection.1.3.10}{Patient}{section.1.3}% 18
+\BOOKMARK [2][-]{subsection.1.3.11}{Rendez-vous}{section.1.3}% 19
+\BOOKMARK [2][-]{subsection.1.3.12}{Sp\351cialit\351}{section.1.3}% 20
+\BOOKMARK [1][-]{section.1.4}{Associations}{chapter.1}% 21
+\BOOKMARK [2][-]{subsection.1.4.1}{Association\1371}{section.1.4}% 22
+\BOOKMARK [1][-]{section.1.5}{Dictionnaire des donn\351es}{chapter.1}% 23
