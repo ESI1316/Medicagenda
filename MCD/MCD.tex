@@ -228,22 +228,22 @@ des nouveaux rendez-vous.
 
 \subsubsection{Identifiant}
 
-Evènement.date + Evènement.debut + Evènement.fin
+Événement.date + Événement.debut + Événement.fin
 
 \subsubsection{Attributs}
 
-Voir \texttt{Evènement}.
+Voir \texttt{Événement}.
 
 \subsubsection{Contraintes d'intégrité}
 
-Voir \texttt{Evènement}.
+Voir \texttt{Événement}.
 
 \subsubsection{Condition de création / suppression d'un objet ou de la classe}
 
 Une disponibilité est créé lorsqu'un mèdecin décide d'accepter de nouveaux rendez-vous ou quand un
 rendez-vous a été annulé par un client. Dans ce cas, le rendez-vous est transformé en disponibilité.
 
-\subsection{Evènement}
+\subsection{Événement}
 
 \subsubsection{Définition}
 
@@ -251,7 +251,7 @@ Un évènement est un horaire pendant lequel le mèdecin peut recevoir un patien
 
 \subsubsection{Identifiant}
 
-Evènement.date + Evènement.debut + Evènement.fin
+Événement.date + Événement.debut + Événement.fin
 
 \subsubsection{Attributs}
 
@@ -354,7 +354,7 @@ Un rendez-vous peut être annulé avant la date de ce dernier par le client lui-
 
 \subsubsection{Identifiant}
 
-Evènement.date + Evènement.debut + Evènement.fin
+Événement.date + Événement.debut + Événement.fin
 
 \subsubsection{Attributs}
 
@@ -394,13 +394,82 @@ Aucune.
 \newpage
 \section{Associations}
 
-\subsection{Association\_1}
-
+\subsection{Association\_possède \texttt{Médecin -> Spécialité}}
 \subsubsection{Définition}
-
+Associe des spécialités à un médecin.
 \subsubsection{Contraintes d'intégrité}
+\texttt{Aucune}
 
+\subsection{Association\_est lié à \texttt{Patient -> Médecin}}
+\subsubsection{Définition}
+Associe un patient ayant pris rendez-vous chez un médecin.
+\subsubsection{Contraintes d'intégrité}
+\texttt{Aucune}
+
+\subsection{Association\_crée \texttt{Médecin -> Compte patient}}
+\subsubsection{Définition}
+Créé une fiche descriptive du patient par un médecin.
+\subsubsection{Contraintes d'intégrité}
+Il se peut que le patient soit déjà créé dans la base de données.
+
+\subsection{Association\_crée \texttt{Médecin -> Compte médecin}}
+\subsubsection{Définition}
+Créé une fiche descriptive du médecin par lui-même.
+\subsubsection{Contraintes d'intégrité}
+Ne peut être effectuer qu'une fois, éventuellement modifié.
+
+\subsection{Association\_possède \texttt{Patient -> Compte patient}}
+\subsubsection{Définition}
+Lie un patient à son compte d'informations.
+\subsubsection{Contraintes d'intégrité}
+Le patient ne peut avoir plusieurs compte.
+
+\subsection{Association\_Possède \texttt{Médecin - Compte médecin}}
+\subsubsection{Définition}
+Associe un médecin à son compte.
+\subsubsection{Contraintes d'intégrité}
+Il ne peut cumuler plus d'un seul compte et doit en possèder un pour gérer son
+agenda.
+
+\subsection{Association\_gère \texttt{Médecin -> Calendrier}}
+\subsubsection{Définition}
+Associe un calendrier de disponibilités à un médecin.
+\subsubsection{Contraintes d'intégrité}
+Il pourrait éventuellement cumuler plusieurs calendrier pour subdiviser ses
+rendez-vous.
+
+\subsection{Association\_est lié à \texttt{Rendez-vous -> Patient}}
+\subsubsection{Définition}
+Associe un patient à un rendez-vous.
+\subsubsection{Contraintes d'intégrité}
+Un patient peut cumuler plusieurs rendez-vous.
+
+\subsection{Association\_possède \texttt{Calendrier -> Événement}}
+\subsubsection{Définition}
+Associe un calendrier à des évènements.
+\subsubsection{Contraintes d'intégrité}
+\texttt{Aucune}
+
+\subsection{Association\_est défini par \texttt{Disponibilité -> Médecin}}
+\subsubsection{Définition}
+Associe une disponibilité du calendrier à un médecin.
+\subsubsection{Contraintes d'intégrité}
+Il peut en cumuler plusieurs et les transformer en rendez-vous.
+
+\subsection{Association\_est attribué à \texttt{Rendez-vous -> Médecin}}
+\subsubsection{Définition}
+Associe un rendez-vous d'un calendrier à un médecin.
+\subsubsection{Contraintes d'intégrité}
+Il peut en cumuler plusieurs et les transformer en disponibilités en cas
+d'annulation.
+
+\subsection{Association\_Se transforme en \texttt{Disponibilité -> Rendez-vous}}
+\subsubsection{Définition}
+Associe une disponibilité entant que rendez-vous.
+\subsubsection{Contraintes d'intégrité}
+Cette association peut être brisée.
 \newpage
+
 \section{Dictionnaire des données}
 
 \begin{center}
@@ -421,16 +490,16 @@ Aucune.
         \hline
         code & Adresse & \parbox[t]{3cm}{Le code postal\\} & Entier & \parbox[t]{2cm}{Aucun\\ domaine particulier\\} & Aucune \\
         \hline
-        date & Evènement & \parbox[t]{3cm}{La date de l'évènement\\} & Date & \parbox[t]{2cm}{Aucun\\ domaine particulier\\} &
+        date & Événement & \parbox[t]{3cm}{La date de l'évènement\\} & Date & \parbox[t]{2cm}{Aucun\\ domaine particulier\\} &
         Aucune \\
         \hline
-        début & Evènement & \parbox[t]{3cm}{L'heure de début de l'évènement\\} & Moment & \parbox[t]{2cm}{Aucun\\ domaine particulier\\} &
+        début & Événement & \parbox[t]{3cm}{L'heure de début de l'évènement\\} & Moment & \parbox[t]{2cm}{Aucun\\ domaine particulier\\} &
         Aucune \\
         \hline
         e-mail & Compte & \parbox[t]{3cm}{L'e-mail du titulaire du compte\\} & Chaîne & \parbox[t]{2cm}{Aucun\\ domaine particulier\\}
         & \parbox[t]{2cm}{E-Mail\\ valide} \\
         \hline
-        fin & Evènement & \parbox[t]{3cm}{L'heure de fin de l'évènement\\} & Moment & \parbox[t]{2cm}{Aucun\\ domaine particulier\\} &
+        fin & Événement & \parbox[t]{3cm}{L'heure de fin de l'évènement\\} & Moment & \parbox[t]{2cm}{Aucun\\ domaine particulier\\} &
         Aucune \\
         \hline
         heure & Moment & \parbox[t]{3cm}{L'heure du\\moment\\} & Entier & Valeur de 0 à 23 &
