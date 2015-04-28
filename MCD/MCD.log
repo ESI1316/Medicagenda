@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.19)  27 APR 2015 20:06
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.19)  28 APR 2015 17:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -516,7 +516,7 @@ LaTeX Info: Redefining \nameref on input line 20.
 \openout3 = `MCD.out'.
 
  (./title_mcd.tex
-<../ressources/logo.png, id=96, 90.3375pt x 170.6375pt>
+<../ressources/logo.png, id=100, 90.3375pt x 170.6375pt>
 File: ../ressources/logo.png Graphic file (type png)
 
 <use ../ressources/logo.png>
@@ -547,248 +547,359 @@ l.24 \chapter
 
 ]
 Chapitre 1.
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
-been already used, duplicate ignored
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 42.
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
+ been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.36 \newpage
+l.50 \newpage
               [2
 
-] [3] [4]
-Overfull \vbox (1169.25925pt too high) has occurred while \output is active []
+] <MCD.jpg, id=159, 1054.94125pt x 628.3475pt>
+File: MCD.jpg Graphic file (type jpg)
+ <use MCD.jpg>
+Package pdftex.def Info: MCD.jpg used on input line 55.
+(pdftex.def)             Requested size: 421.96902pt x 251.33455pt.
 
+Overfull \hbox (61.96902pt too wide) in paragraph at lines 55--56
+ [][] 
+ []
 
-[5] [6]
-Underfull \hbox (badness 10000) in paragraph at lines 226--226
+[3 <./MCD.jpg>] [4] [5] [6] [7] [8] [9] [10] [11]
+Underfull \hbox (badness 10000) in paragraph at lines 411--411
 []|\T1/cmr/m/n/10.95 Rendez-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--226
+Underfull \hbox (badness 10000) in paragraph at lines 411--411
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--229
+Underfull \hbox (badness 10000) in paragraph at lines 414--414
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 230--230
+Underfull \hbox (badness 10000) in paragraph at lines 415--415
 []\T1/cmr/m/n/10.95 Toutes
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 230--230
+Underfull \hbox (badness 10000) in paragraph at lines 415--415
 \T1/cmr/m/n/10.95 adresses
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 230--230
+Underfull \hbox (badness 10000) in paragraph at lines 415--415
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 232--232
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 234--234
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 234--234
+Underfull \hbox (badness 10000) in paragraph at lines 417--417
 \T1/cmr/m/n/10.95 domaine
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 234--234
+Underfull \hbox (badness 10000) in paragraph at lines 417--417
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 237--237
+Underfull \hbox (badness 10000) in paragraph at lines 419--419
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 237--237
+Underfull \hbox (badness 10000) in paragraph at lines 419--419
 \T1/cmr/m/n/10.95 domaine
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 237--237
+Underfull \hbox (badness 10000) in paragraph at lines 419--419
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--240
+Underfull \hbox (badness 10000) in paragraph at lines 422--422
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--240
+Underfull \hbox (badness 10000) in paragraph at lines 422--422
 \T1/cmr/m/n/10.95 domaine
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--240
+Underfull \hbox (badness 10000) in paragraph at lines 422--422
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 243--243
+Underfull \hbox (badness 10000) in paragraph at lines 424--424
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 243--243
+Underfull \hbox (badness 10000) in paragraph at lines 424--424
 \T1/cmr/m/n/10.95 domaine
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 243--243
+Underfull \hbox (badness 10000) in paragraph at lines 424--424
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 246--246
+Underfull \hbox (badness 10000) in paragraph at lines 427--427
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 249--249
+Underfull \hbox (badness 10000) in paragraph at lines 427--427
+\T1/cmr/m/n/10.95 domaine
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 427--427
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 430--430
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 430--430
+\T1/cmr/m/n/10.95 domaine
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 430--430
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 433--433
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 433--433
+\T1/cmr/m/n/10.95 domaine
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 433--433
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 436--436
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 439--439
 []|\T1/cmr/m/n/10.95 Compte
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 249--249
+Underfull \hbox (badness 10000) in paragraph at lines 439--439
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 249--249
+Underfull \hbox (badness 10000) in paragraph at lines 439--439
 \T1/cmr/m/n/10.95 domaine
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 249--249
+Underfull \hbox (badness 10000) in paragraph at lines 439--439
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 252--252
+Underfull \hbox (badness 10000) in paragraph at lines 442--442
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--254
+Underfull \hbox (badness 10000) in paragraph at lines 444--444
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--259
+Underfull \hbox (badness 10000) in paragraph at lines 449--449
 []|\T1/cmr/m/n/10.95 Rendez-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--259
+Underfull \hbox (badness 10000) in paragraph at lines 449--449
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--259
+Underfull \hbox (badness 10000) in paragraph at lines 449--449
 \T1/cmr/m/n/10.95 domaine
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--259
+Underfull \hbox (badness 10000) in paragraph at lines 449--449
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--262
+Underfull \hbox (badness 10000) in paragraph at lines 452--452
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--262
+Underfull \hbox (badness 10000) in paragraph at lines 452--452
 \T1/cmr/m/n/10.95 domaine
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--262
+Underfull \hbox (badness 10000) in paragraph at lines 452--452
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--265
+Underfull \hbox (badness 1648) in paragraph at lines 455--455
+[]\T1/cmr/m/n/10.95 Le nu-méro dans
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 455--455
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--265
+Underfull \hbox (badness 10000) in paragraph at lines 455--455
+[]\T1/cmr/m/n/10.95 Nombres
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 457--457
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 457--457
 \T1/cmr/m/n/10.95 domaine
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--265
+Underfull \hbox (badness 10000) in paragraph at lines 457--457
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 268--268
+Underfull \hbox (badness 10000) in paragraph at lines 460--460
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 268--268
+Underfull \hbox (badness 10000) in paragraph at lines 460--460
+\T1/cmr/m/n/10.95 domaine
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 460--460
 
  []
 
 
-Overfull \hbox (81.88577pt too wide) in alignment at lines 222--271
+Overfull \hbox (81.88577pt too wide) in alignment at lines 407--462
  [] [] [] [] [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 271
+Underfull \vbox (badness 10000) detected at line 462
  []
 
-[7]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 275.
- [8]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 275.
+
+Underfull \hbox (badness 10000) in paragraph at lines 463--463
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 463--463
+\T1/cmr/m/n/10.95 domaine
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 463--463
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--465
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 467--467
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 467--467
+\T1/cmr/m/n/10.95 domaine
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 467--467
+
+ []
+
+
+Overfull \hbox (81.88577pt too wide) in alignment at lines 462--470
+ [] [] [] [] [] [] 
+ []
+
+[12]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 474.
+ [13]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 474.
  (./MCD.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 275.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 275.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 474.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 474.
 Package rerunfilecheck Info: File `MCD.out' has not changed.
-(rerunfilecheck)             Checksum: 695DCC8D455B4387BE50C03BA81C7BC6;1571.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 275.
+(rerunfilecheck)             Checksum: AEDF63618CF9561535B2D5BF7416821A;1633.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 474.
  ) 
 Here is how much of TeX's memory you used:
- 6542 strings out of 493304
- 93662 string characters out of 6139871
- 217769 words of memory out of 5000000
- 9816 multiletter control sequences out of 15000+600000
- 17495 words of font info for 38 fonts, out of 8000000 for 9000
+ 6567 strings out of 493304
+ 94319 string characters out of 6139871
+ 224769 words of memory out of 5000000
+ 9837 multiletter control sequences out of 15000+600000
+ 17809 words of font info for 39 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 29i,7n,28p,231b,529s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,7n,28p,231b,531s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf/
 fonts/type1/public/cm-super/sfbx1095.pfb></usr/share/texmf/fonts/type1/public/c
 m-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb
 ></usr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/f
 onts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm
--super/sfcc1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1440.pfb>
-</usr/share/texmf/fonts/type1/public/cm-super/sfcc1728.pfb></usr/share/texmf/fo
-nts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-
-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on MCD.pdf (10 pages, 187677 bytes).
+-super/sfcc1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1200.pfb>
+</usr/share/texmf/fonts/type1/public/cm-super/sfcc1440.pfb></usr/share/texmf/fo
+nts/type1/public/cm-super/sfcc1728.pfb></usr/share/texmf/fonts/type1/public/cm-
+super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb><
+/usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fon
+ts/type1/public/cm-super/sftt1095.pfb>
+Output written on MCD.pdf (15 pages, 386369 bytes).
 PDF statistics:
- 315 PDF objects out of 1000 (max. 8388607)
- 287 compressed objects within 3 object streams
- 108 named destinations out of 1000 (max. 500000)
- 190 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 344 PDF objects out of 1000 (max. 8388607)
+ 307 compressed objects within 4 object streams
+ 107 named destinations out of 1000 (max. 500000)
+ 203 words of extra memory for PDF output out of 10000 (max. 10000000)
 
