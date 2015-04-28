@@ -1,0 +1,77 @@
+\documentclass[a4paper, 11pt]{report}
+
+\usepackage[utf8]{inputenc}                                                      
+\usepackage[french]{babel}                                                       
+\usepackage[T1]{fontenc}  
+\usepackage[pdftex]{graphicx}                                                    
+\usepackage{url}                                                                 
+\usepackage{longtable}
+\usepackage[bookmarks, colorlinks=false, pdfborder={0 0 0},
+	pdftitle={Medicagenda}, 
+	pdfauthor={Knop Florian, Kriwin Paul, Placentino Simon},
+	pdfsubject={Medicagenda},           
+pdfkeywords={UML, ISO/IEC 19505-1:2012, Medicagenda, Projet, analyse, ESI}]{hyperref}   
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}    
+
+\begin{document}
+\input{./title_mct.tex}
+\tableofcontents
+
+\chapter{Modèle conceptuel des données}
+
+\section{Introduction}
+
+\subsection{Objectifs du document}
+Ce document présente la décomposition fonctionnelle du projet Medicagenda.
+\subsection{Domaine de définition du document}
+L'ensemble des sous-systèmes décrits dans le MCD :
+\begin{itemize}
+	\item SS1 : Nom complet
+	\item SS2 : Nom complet 
+\end{itemize}
+\subsection{Définitions, acronymes et abréviations}
+\subsection{Références}
+\begin{itemize}
+	\item[] Etude de cas de l'agenda médical\footnote{path{../analyse.pdf}}
+	\item[] M.C.D. de Medicagenda
+\end{itemize}
+\newpage
+\section{Acteurs}
+\subsection{Acteurs externes}
+Les acteurs externes au SIA complet du Medicagenda se retrouvent dans le 
+diagramme de contexte\footnote{Voir~\ref{dc} Diagramme de contexte} : 
+\begin{itemize}
+	\item Patient : Personne qui pourra prendre rendez-vous auprès d'un ou
+		plusieurs médécin pour une ou plusieurs spécialisation.
+\end{itemize}
+\subsection{Acteurs internes}
+\begin{itemize}
+	\item Secrétaire : Dans le SI, il s'agit de la personne qui s'occupe de
+		gérer le calendrier d'un ou de plusieurs médecin.
+	\item Médecin : Propriétaire de l'agenda pouvant éventuellement être le
+		gestionnaire de ce dernier.
+\end{itemize}
+\subsection{Diagramme des acteurs du SIA}
+\newpage
+\section{Vision globale du SI}
+\subsection{\label{dc}Diagramme de contexte}
+Ce diagramme présente tout le système informatique du Medicagenda et les acteurs 
+externes avec lesquels il est en relation. 
+\subsection{Diagramme des systèmes}
+\newpage
+\section{Diagramme des sous-sytèmes}
+\section{Système SI1 : }
+\subsection{Diagramme des Use Cases}
+\subsection{Description des U.C.}
+\subsubsection{UC XXXX}
+\section{Système SI2 : }
+\subsection{Diagramme des Use Cases}
+\subsection{Description des U.C.}
+\subsubsection{UC XXXX}
+\section{Système SI3 : }
+\subsection{Diagramme des Use Cases}
+\subsection{Description des U.C.}
+\subsubsection{UC XXXX}
+
+\end{document}
