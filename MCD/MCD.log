@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2015.4.17)  28 APR 2015 18:51
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2015.4.17)  28 APR 2015 18:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -513,7 +513,7 @@ LaTeX Info: Redefining \nameref on input line 20.
 \openout3 = `MCD.out'.
 
  (./title_mcd.tex
-<../ressources/logo.png, id=144, 90.3375pt x 170.6375pt>
+<../ressources/logo.png, id=148, 90.3375pt x 170.6375pt>
 File: ../ressources/logo.png Graphic file (type png)
 
 <use ../ressources/logo.png>
@@ -531,24 +531,24 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 3.
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 87.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 88.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-Overfull \hbox (34.76894pt too wide) in paragraph at lines 120--120
+)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.121 ...} -> Rendez-vous}}{14}{subsection.1.4.12}
+                                                   [1
+
+]
+Overfull \hbox (34.76894pt too wide) in paragraph at lines 121--121
  [][] [][]\T1/cmr/m/n/10.95 Association_Se trans-forme en \T1/cmtt/m/n/10.95 Di
 sponibilité -> Rendez-vous[] []  
  []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.123 ...re des donn\IeC {\'e}es}{15}{section.1.5}
-                                                   [1
-
-])
+)
 \tf@toc=\write4
 \openout4 = `MCD.toc'.
 
@@ -561,343 +561,336 @@ l.24 \chapter
 Chapitre 1.
 [3
 
-] <MCD.jpg, id=219, 867.24pt x 628.3475pt>
+] <MCD.jpg, id=224, 867.24pt x 628.3475pt>
 File: MCD.jpg Graphic file (type jpg)
  <use MCD.jpg>
-Package pdftex.def Info: MCD.jpg used on input line 55.
+Package pdftex.def Info: MCD.jpg used on input line 56.
 (pdftex.def)             Requested size: 346.88986pt x 251.33455pt.
  [4 <./MCD.jpg>]
 [5] [6] [7] [8] [9] [10] [11]
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 397.
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 398.
  [12] [13]
-Overfull \hbox (39.10385pt too wide) in paragraph at lines 466--466
+Overfull \hbox (39.10385pt too wide) in paragraph at lines 467--467
 []\T1/cmr/bx/n/12 Association_Se trans-forme en \T1/cmtt/m/n/12 Disponibilité -
 > Rendez-vous 
  []
 
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 480--480
+Underfull \hbox (badness 10000) in paragraph at lines 481--481
 []|\T1/cmr/m/n/10.95 Rendez-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 480--480
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 483--483
+Underfull \hbox (badness 10000) in paragraph at lines 481--481
 
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 484--484
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 485--485
 []\T1/cmr/m/n/10.95 Toutes
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 484--484
+Underfull \hbox (badness 10000) in paragraph at lines 485--485
 \T1/cmr/m/n/10.95 adresses
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 484--484
+Underfull \hbox (badness 10000) in paragraph at lines 485--485
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 486--486
+Underfull \hbox (badness 10000) in paragraph at lines 487--487
 \T1/cmr/m/n/10.95 domaine
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 486--486
+Underfull \hbox (badness 10000) in paragraph at lines 487--487
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 488--488
+Underfull \hbox (badness 10000) in paragraph at lines 489--489
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 488--488
+Underfull \hbox (badness 10000) in paragraph at lines 489--489
 \T1/cmr/m/n/10.95 domaine
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 488--488
+Underfull \hbox (badness 10000) in paragraph at lines 489--489
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 491--491
+Underfull \hbox (badness 10000) in paragraph at lines 492--492
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 491--491
+Underfull \hbox (badness 10000) in paragraph at lines 492--492
 \T1/cmr/m/n/10.95 domaine
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 491--491
+Underfull \hbox (badness 10000) in paragraph at lines 492--492
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 493--493
+Underfull \hbox (badness 10000) in paragraph at lines 494--494
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 493--493
+Underfull \hbox (badness 10000) in paragraph at lines 494--494
 \T1/cmr/m/n/10.95 domaine
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 493--493
+Underfull \hbox (badness 10000) in paragraph at lines 494--494
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 496--496
+Underfull \hbox (badness 10000) in paragraph at lines 497--497
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 496--496
+Underfull \hbox (badness 10000) in paragraph at lines 497--497
 \T1/cmr/m/n/10.95 domaine
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 496--496
+Underfull \hbox (badness 10000) in paragraph at lines 497--497
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 499--499
+Underfull \hbox (badness 10000) in paragraph at lines 500--500
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 499--499
+Underfull \hbox (badness 10000) in paragraph at lines 500--500
 \T1/cmr/m/n/10.95 domaine
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 499--499
+Underfull \hbox (badness 10000) in paragraph at lines 500--500
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 502--502
+Underfull \hbox (badness 10000) in paragraph at lines 503--503
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 502--502
+Underfull \hbox (badness 10000) in paragraph at lines 503--503
 \T1/cmr/m/n/10.95 domaine
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 502--502
+Underfull \hbox (badness 10000) in paragraph at lines 503--503
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 505--505
+Underfull \hbox (badness 10000) in paragraph at lines 506--506
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 508--508
+Underfull \hbox (badness 10000) in paragraph at lines 509--509
 []|\T1/cmr/m/n/10.95 Compte
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 508--508
+Underfull \hbox (badness 10000) in paragraph at lines 509--509
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 508--508
+Underfull \hbox (badness 10000) in paragraph at lines 509--509
 \T1/cmr/m/n/10.95 domaine
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 508--508
+Underfull \hbox (badness 10000) in paragraph at lines 509--509
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 511--511
+Underfull \hbox (badness 10000) in paragraph at lines 512--512
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 513--513
+Underfull \hbox (badness 10000) in paragraph at lines 514--514
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 518--518
+Underfull \hbox (badness 10000) in paragraph at lines 519--519
 []|\T1/cmr/m/n/10.95 Rendez-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 518--518
+Underfull \hbox (badness 10000) in paragraph at lines 519--519
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 518--518
+Underfull \hbox (badness 10000) in paragraph at lines 519--519
 \T1/cmr/m/n/10.95 domaine
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 518--518
+Underfull \hbox (badness 10000) in paragraph at lines 519--519
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 521--521
+Underfull \hbox (badness 10000) in paragraph at lines 522--522
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 521--521
+Underfull \hbox (badness 10000) in paragraph at lines 522--522
 \T1/cmr/m/n/10.95 domaine
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 521--521
+Underfull \hbox (badness 10000) in paragraph at lines 522--522
 
  []
 
 
-Underfull \hbox (badness 1648) in paragraph at lines 524--524
+Underfull \hbox (badness 1648) in paragraph at lines 525--525
 []\T1/cmr/m/n/10.95 Le nu-méro dans
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 524--524
+Underfull \hbox (badness 10000) in paragraph at lines 525--525
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 524--524
+Underfull \hbox (badness 10000) in paragraph at lines 525--525
 []\T1/cmr/m/n/10.95 Nombres
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 526--526
+Underfull \hbox (badness 10000) in paragraph at lines 527--527
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 526--526
+Underfull \hbox (badness 10000) in paragraph at lines 527--527
 \T1/cmr/m/n/10.95 domaine
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 526--526
+Underfull \hbox (badness 10000) in paragraph at lines 527--527
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 529--529
+Underfull \hbox (badness 10000) in paragraph at lines 530--530
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 529--529
+Underfull \hbox (badness 10000) in paragraph at lines 530--530
 \T1/cmr/m/n/10.95 domaine
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 529--529
+Underfull \hbox (badness 10000) in paragraph at lines 530--530
 
  []
 
 
-Overfull \hbox (81.88577pt too wide) in alignment at lines 476--531
+Overfull \hbox (81.88577pt too wide) in alignment at lines 477--532
  [] [] [] [] [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 531
+Underfull \vbox (badness 10000) detected at line 532
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 532--532
+Underfull \hbox (badness 10000) in paragraph at lines 533--533
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 532--532
+Underfull \hbox (badness 10000) in paragraph at lines 533--533
 \T1/cmr/m/n/10.95 domaine
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 532--532
+Underfull \hbox (badness 10000) in paragraph at lines 533--533
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 534--534
+Underfull \hbox (badness 10000) in paragraph at lines 535--535
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 534--534
+Underfull \hbox (badness 10000) in paragraph at lines 535--535
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 536--536
+Underfull \hbox (badness 10000) in paragraph at lines 537--537
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 536--536
+Underfull \hbox (badness 10000) in paragraph at lines 537--537
 \T1/cmr/m/n/10.95 domaine
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 536--536
+Underfull \hbox (badness 10000) in paragraph at lines 537--537
 
  []
 
 
-Overfull \hbox (81.88577pt too wide) in alignment at lines 531--539
+Overfull \hbox (81.88577pt too wide) in alignment at lines 532--540
  [] [] [] [] [] [] 
  []
 
 [15]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 543.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 544.
  [16]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 543.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 544.
  (./MCD.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 543.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 543.
-
-
-Package rerunfilecheck Warning: File `MCD.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `MCD.out':
-(rerunfilecheck)             Before: 0A44FA19D4D1C7ADDE65E569480F7087;2876
-(rerunfilecheck)             After:  751F5C38DF7BF36CB7C05173D7D10186;2879.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 543.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 544.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 544.
+Package rerunfilecheck Info: File `MCD.out' has not changed.
+(rerunfilecheck)             Checksum: D456E884CF301221B3A97030D9800741;2957.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 544.
  ) 
 Here is how much of TeX's memory you used:
- 6351 strings out of 495030
- 90736 string characters out of 3180761
+ 6353 strings out of 495030
+ 90770 string characters out of 3180761
  212525 words of memory out of 3000000
- 9321 multiletter control sequences out of 15000+200000
+ 9322 multiletter control sequences out of 15000+200000
  18122 words of font info for 40 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  29i,7n,29p,309b,517s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -914,10 +907,10 @@ mf-var/fonts/pk/ljfour/jknappen/ec/ecti1200.600pk> </home/g39631/.texmf-var/fon
 ts/pk/ljfour/jknappen/ec/ecbx2074.600pk> </home/g39631/.texmf-var/fonts/pk/ljfo
 ur/jknappen/ec/eccc1440.600pk> </home/g39631/.texmf-var/fonts/pk/ljfour/jknappe
 n/ec/eccc1728.600pk>
-Output written on MCD.pdf (18 pages, 206557 bytes).
+Output written on MCD.pdf (18 pages, 206637 bytes).
 PDF statistics:
- 827 PDF objects out of 1000 (max. 8388607)
- 416 compressed objects within 5 object streams
- 143 named destinations out of 1000 (max. 500000)
- 291 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 832 PDF objects out of 1000 (max. 8388607)
+ 421 compressed objects within 5 object streams
+ 144 named destinations out of 1000 (max. 500000)
+ 299 words of extra memory for PDF output out of 10000 (max. 10000000)
 
