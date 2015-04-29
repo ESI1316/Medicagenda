@@ -1,4 +1,4 @@
-MCD Medicagenda.vpp~1
+*.vpp~*
 ### TeX ###
 ## Core latex/pdflatex auxiliary files:
 *.aux
