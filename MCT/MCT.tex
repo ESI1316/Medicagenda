@@ -18,7 +18,7 @@ pdfkeywords={UML, ISO/IEC 19505-1:2012, Medicagenda, Projet, analyse, ESI}]{hype
 \input{./title_mct.tex}
 \tableofcontents
 
-\chapter{Modèle conceptuel des données}
+\chapter{Modèle conceptuel des traitements}
 
 \section{Introduction}
 
@@ -87,4 +87,48 @@ externes avec lesquels il est en relation.
 \subsection{Diagramme des Use Cases}
 \subsection{Description des U.C.}
 \subsubsection{UC XXXX}
+
+\newpage
+\subsection{Matrice CRUD}
+
+Pour la lisibilité de la matrice, cette dernière a été séparé en deux tableaux.
+Seuls les UC ayant une action avec une des classes du tableau apparaissent.
+
+\begin{center}
+    \begin{longtable}{|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|}
+        \hline
+        & Compte & Compte Mèdecin & Compte Patient & Spécialité \\
+        \hline
+        UC1101a & C & / & C & / \\
+        \hline
+        UC1101b & C & C & / & R \\
+        \hline
+        UC1102  & U & / & U & / \\
+        \hline
+        UC1105  & R & R & R & R \\
+        \hline
+        UC1106 & R & R & R & R \\
+        \hline
+        
+    \end{longtable}
+\end{center}
+
+\begin{center}
+    \begin{longtable}{|p{2.2cm}|p{2.2cm}|p{2.2cm}|p{2.2cm}|}
+        \hline
+        & Evènement & Rendez-vous & Disponnibilité  \\
+        \hline
+        UC1103 & C & R & C \\
+        \hline 
+        UC1104 & C & C & R \\
+        \hline
+        UC1105 & U & U & / \\
+        \hline
+        UC1106 & R & R & / \\
+        \hline
+        
+    \end{longtable}
+\end{center}
+
+
 \end{document}
