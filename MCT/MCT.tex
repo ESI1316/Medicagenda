@@ -7,10 +7,10 @@
 \usepackage{url}                                                                 
 \usepackage{longtable}
 \usepackage[bookmarks, colorlinks=false, pdfborder={0 0 0},
-	pdftitle={Medicagenda}, 
+	pdftitle={\texttt{Medicagenda}}, 
 	pdfauthor={Knop Florian, Kriwin Paul, Placentino Simon},
-	pdfsubject={Medicagenda},           
-pdfkeywords={UML, ISO/IEC 19505-1:2012, Medicagenda, Projet, analyse, ESI}]{hyperref}   
+	pdfsubject={\texttt{Medicagenda}},           
+pdfkeywords={UML, ISO/IEC 19505-1:2012, \texttt{Medicagenda}, Projet, analyse, ESI}]{hyperref}   
 
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}    
 
@@ -23,23 +23,23 @@ pdfkeywords={UML, ISO/IEC 19505-1:2012, Medicagenda, Projet, analyse, ESI}]{hype
 \section{Introduction}
 
 \subsection{Objectifs du document}
-Ce document présente la décomposition fonctionnelle du projet Medicagenda.
+Ce document présente la décomposition fonctionnelle du projet \texttt{Medicagenda}.
 \subsection{Domaine de définition du document}
-L'ensemble des sous-systèmes décrits dans le MCD :
+L'ensemble des sous-systèmes décrits dans le M.C.D. :
 \begin{itemize}
-	\item SS1 : Nom complet
-	\item SS2 : Nom complet 
+	\item SS1 : \texttt{Medicagenda}.
 \end{itemize}
 \subsection{Définitions, acronymes et abréviations}
 \subsection{Références}
 \begin{itemize}
-	\item[] Etude de cas de l'agenda médical\footnote{path{../analyse.pdf}}
-	\item[] M.C.D. de Medicagenda
+	\item[] Etude de cas de l'agenda médical\footnote{\href{../analyse.pdf}{voir
+		étude de cas}}
+	\item[] M.C.D. de \texttt{Medicagenda}\footnote{\href{../M.C.D..M.C.D..pdf}{voir document M.C.D.}}
 \end{itemize}
 \newpage
 \section{Acteurs}
 \subsection{Acteurs externes}
-Les acteurs externes au SIA complet du Medicagenda se retrouvent dans le 
+Les acteurs externes au SIA complet du \texttt{Medicagenda} se retrouvent dans le 
 diagramme de contexte\footnote{Voir~\ref{dc} Diagramme de contexte} : 
 \begin{itemize}
 	\item Patient : Personne qui pourra prendre rendez-vous auprès d'un ou
@@ -60,7 +60,7 @@ diagramme de contexte\footnote{Voir~\ref{dc} Diagramme de contexte} :
 \newpage
 \section{Vision globale du SI}
 \subsection{\label{dc}Diagramme de contexte}
-Ce diagramme présente tout le système informatique du Medicagenda et les acteurs 
+Ce diagramme présente tout le système informatique du \texttt{Medicagenda} et les acteurs 
 externes avec lesquels il est en relation. 
 \begin{figure}[hb]
 	\centering
@@ -83,8 +83,25 @@ externes avec lesquels il est en relation.
 	\caption{Diagramme des sous-systèmes}
 	\label{fig:sous-systeme}
 \end{figure}
+\newpage
 \section{Système SI1 : Agenda}
 \subsection{Diagramme des Use Cases}
+\begin{figure}[hb]
+	\centering
+	\includegraphics[scale=0.5]{SS1_UC.jpg}
+	\caption{Diagramme des Use Cases}
+	\label{fig:ss1_uc}
+\end{figure}
 \subsection{Description des U.C.}
-\subsubsection{UC XXXX}
+\subsubsection{1101 Enregistrer une personne}
+\subsubsection{1101a Enregistrer un patient}
+\subsubsection{1101b Enregistrer un médecin}
+\subsubsection{1102 Modifier un compte}
+\subsubsection{1102a Modifier un patient}
+\subsubsection{1102b Modifier un patient}
+\subsubsection{1103 Définir une disponibilité}
+\subsubsection{1104 Définir un rendez-vous}
+\subsubsection{1105 Annuler un rendez-vous}
+\subsubsection{1106 Envoyer une notification}
+\subsubsection{1107 Ajouter une spécialité}
 \end{document}
