@@ -32,9 +32,10 @@ L'ensemble des sous-systèmes décrits dans le M.C.D. :
 \subsection{Définitions, acronymes et abréviations}
 \subsection{Références}
 \begin{itemize}
-	\item[] Etude de cas de l'agenda médical\footnote{\href{../analyse.pdf}{voir
+	\item[] Etude de cas de l'agenda
+		médical\footnote{\href{../Enonce_Travail_Synthese_14-15.pdf}{voir
 		étude de cas}}
-	\item[] M.C.D. de \texttt{Medicagenda}\footnote{\href{../M.C.D..M.C.D..pdf}{voir document M.C.D.}}
+	\item[] M.C.D. de \texttt{Medicagenda}\footnote{\href{../MCD/MCD.pdf}{voir document M.C.D.}}
 \end{itemize}
 \newpage
 \section{Acteurs}
@@ -92,18 +93,83 @@ externes avec lesquels il est en relation.
 	\caption{Diagramme des Use Cases}
 	\label{fig:ss1_uc}
 \end{figure}
-\subsection{Description des U.C.}
+\subsection{Description des \texttt{U.C.}}
 \subsubsection{1101 Enregistrer une personne}
-\subsubsection{1101a Enregistrer un patient}
-\subsubsection{1101b Enregistrer un médecin}
+\paragraph{1101a Enregistrer un patient}
+Ce \texttt{U.C.} permet créer un nouveau compte pour un patient qui n'en possède pas au
+par avant. Ce enregistrement peut se faire :
+\begin{itemize}
+	\item directement par le patient lui-même,
+	\item directement par le médecin lui-même,
+	\item directement par le médecin lui-même lors de la prise de rendez-vous.
+\end{itemize}
+\paragraph{1101b Enregistrer un médecin}
+Ce \texttt{U.C.} permet créer un nouveau compte pour un médecin qui n'en possède pas au
+par avant. Ce enregistrement peut se faire :
+\begin{itemize}
+	\item directement par le médecin lui-même,
+	\item par un organisme externe déployant le système (tel que l'INAMI).
+\end{itemize}
+
+L'enregistrement d'un nouveau médecin peut entrainer 
+\begin{itemize}
+	\item l'enregistrement de	spécialités associées à ce dernier ne se trouvant pas déjà dans la 
+		BDD\footnote{Base De Données}.
+	\item la création d'un nouveau calendrier.
+\end{itemize}
+Ce \texttt{U.C.} peut donc faire appel au \texttt{U.C. 1107}.
 \subsubsection{1102 Modifier un compte}
-\subsubsection{1102a Modifier un patient}
-\subsubsection{1102b Modifier un patient}
-\subsubsection{1103 Définir une disponibilité}
-\subsubsection{1104 Définir un rendez-vous}
-\subsubsection{1105 Annuler un rendez-vous}
-\subsubsection{1106 Envoyer une notification}
-\subsubsection{1107 Ajouter une spécialité}
+
+\paragraph{1102a Modifier un patient}
+Ce \texttt{U.C.} permet de modifier les données d'un compte. Cette modification
+peut se faire :
+\begin{itemize}
+	\item par le médecin directement n'intervenant que sur un certain niveau de
+		données,
+	\item par le patient directement n'intervenant que sur un certain niveau de
+		données.
+\end{itemize}
+
+Certaines modifications de données, telles que l'annulation d'un rendez-vous par
+l'un ou par l'autre, doivent être notifiée.
+
+Le patient peut ainsi s'inscrire à un rendez-vous selon les disponibilités
+proposées par le médecin.
+\paragraph{1102b Modifier un médecin}
+Ce \texttt{U.C.} permet, uniquement au \textbf{médecin}(on éventuellement à un
+service externe tel que l'INAMI) de modifier son compte.
+
+Il peut faire appel aux 
+\begin{itemize}
+	\item \texttt{~U.C. 1103} 
+	\item \texttt{~U.C. 1104} 
+	\item \texttt{~U.C. 1105}
+	\item \texttt{~U.C. 1107}
+\end{itemize}
+
+\subsubsection{\label{1103}1103 Définir une disponibilité}
+Ce \texttt{U.C.} permet a un médecin de définir une plage de disponibilité dans
+un jour du calendrier. Il permet, aussi, de redéfinir une disponibilité après
+l'annulation d'un rendez-vous.
+\subsubsection{\label{1104}1104 Définir un rendez-vous}
+Ce \texttt{U.C.} permet à un patient de définir un rendez-vous selon le
+calendrier d'un médecin en se basant sur l'ensemble de ses disponibilités. 
+Ce \texttt{U.C.} peut aussi être effectué par un médecin pour le compte d'un
+patient directement si un nouveau rendez-vous doit être fixé.
+
+Le rendez-vous enclenchera l'ajout d'un entrée dans le mécanisme des
+notifications.
+\subsubsection{\label{1105}1105 Annuler un rendez-vous}
+Ce \texttt{U.C.} permet a une disponibilité de l'agenda d'être à nouveau
+disponible. L'annulation peut être faite par le patient ou par le médecin. 
+\subsubsection{\label{1106}1106 Envoyer une notification}
+Ce \texttt{U.C.} \textbf{automatisé} envoie des notifications aux patients ayant
+un rendez-vous. Celle-ci sera envoyée à l'heure définie par le médecin, si le
+patient n'a pas annulé avant, la consultation lui sera facturée.
+\subsubsection{\label{1107}1107 Ajouter une spécialité}
+Ce \texttt{U.C.} permet de rajouter des spécialités dans la base de données et
+uniquement par un médecin. Cet ajout doit passer par un organisme, tel que
+l'INAMI, pouvant le confirmer.
 \newpage
 \subsection{Matrice CRUD}
 
@@ -111,38 +177,38 @@ Pour la lisibilité de la matrice, cette dernière a été séparé en deux tabl
 Seuls les UC ayant une action avec une des classes du tableau apparaissent.
 
 \begin{center}
-    \begin{longtable}{|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|}
-        \hline
-        & Compte & Compte Mèdecin & Compte Patient & Spécialité \\
-        \hline
-        UC1101a & C & / & C & / \\
-        \hline
-        UC1101b & C & C & / & R \\
-        \hline
-        UC1102  & U & / & U & / \\
-        \hline
-        UC1105  & R & R & R & R \\
-        \hline
-        UC1106 & R & R & R & R \\
-        \hline
-        
-    \end{longtable}
+	\begin{longtable}{|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|}
+		\hline
+		& Compte & Compte Mèdecin & Compte Patient & Spécialité \\
+		\hline
+		UC1101a & C & / & C & / \\
+		\hline
+		UC1101b & C & C & / & R \\
+		\hline
+		UC1102  & U & / & U & / \\
+		\hline
+		UC1105  & R & R & R & R \\
+		\hline
+		UC1106 & R & R & R & R \\
+		\hline
+
+	\end{longtable}
 \end{center}
 
 \begin{center}
-    \begin{longtable}{|p{2.2cm}|p{2.2cm}|p{2.2cm}|p{2.2cm}|}
-        \hline
-        & Evènement & Rendez-vous & Disponnibilité  \\
-        \hline
-        UC1103 & C & R & C \\
-        \hline 
-        UC1104 & C & C & R \\
-        \hline
-        UC1105 & U & U & / \\
-        \hline
-        UC1106 & R & R & / \\
-        \hline
-        
-    \end{longtable}
+	\begin{longtable}{|p{2.2cm}|p{2.2cm}|p{2.2cm}|p{2.2cm}|}
+		\hline
+		& Evènement & Rendez-vous & Disponnibilité  \\
+		\hline
+		UC1103 & C & R & C \\
+		\hline 
+		UC1104 & C & C & R \\
+		\hline
+		UC1105 & U & U & / \\
+		\hline
+		UC1106 & R & R & / \\
+		\hline
+
+	\end{longtable}
 \end{center}
 \end{document}
