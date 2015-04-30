@@ -25,10 +25,10 @@
 \contentsline {subsubsection}{Attributs}{6}{section*.13}
 \contentsline {subsubsection}{Contraintes d'int\IeC {\'e}grit\IeC {\'e}}{6}{section*.14}
 \contentsline {subsubsection}{Condition de cr\IeC {\'e}ation / suppression d'un objet ou de la classe}{6}{section*.15}
-\contentsline {subsection}{\numberline {1.3.4}Compte m\IeC {\`e}decin}{6}{subsection.1.3.4}
+\contentsline {subsection}{\numberline {1.3.4}Compte m\IeC {\'e}decin}{6}{subsection.1.3.4}
 \contentsline {subsubsection}{D\IeC {\'e}finition}{6}{section*.16}
 \contentsline {subsubsection}{Identifiant}{6}{section*.17}
-\contentsline {subsubsection}{Attributs}{6}{section*.18}
+\contentsline {subsubsection}{Attributs}{7}{section*.18}
 \contentsline {subsubsection}{Contraintes d'int\IeC {\'e}grit\IeC {\'e}}{7}{section*.19}
 \contentsline {subsubsection}{Condition de cr\IeC {\'e}ation / suppression d'un objet ou de la classe}{7}{section*.20}
 \contentsline {subsection}{\numberline {1.3.5}Compte patient}{7}{subsection.1.3.5}
@@ -40,7 +40,7 @@
 \contentsline {subsection}{\numberline {1.3.6}Date}{7}{subsection.1.3.6}
 \contentsline {subsubsection}{D\IeC {\'e}finition}{7}{section*.26}
 \contentsline {subsubsection}{Identifiant}{7}{section*.27}
-\contentsline {subsubsection}{Attributs}{7}{section*.28}
+\contentsline {subsubsection}{Attributs}{8}{section*.28}
 \contentsline {subsubsection}{Contraintes d'int\IeC {\'e}grit\IeC {\'e}}{8}{section*.29}
 \contentsline {subsubsection}{Condition de cr\IeC {\'e}ation / suppression d'un objet ou de la classe}{8}{section*.30}
 \contentsline {subsection}{\numberline {1.3.7}Disponibilit\IeC {\'e}}{8}{subsection.1.3.7}

@@ -25,12 +25,12 @@ pdfkeywords={UML, ISO/IEC 19505-1:2012, Medicagenda, Projet, analyse, ESI}]{hype
 \subsection{Objectifs du document}
 
 Cette section sert à documenter et valider les éléments persistants qui devront
-être stockés dans le système informatique de la gestion de calendriers de mèdecins.
+être stockés dans le système informatique de la gestion de calendriers de médecins.
 
 \subsection{Domaine de définition du document}
 
 Cette section reprend la description du diagramme métier (diagramme de classes) de la gestion de 
-calendriers de mèdecins.
+calendriers de médecins.
 
 \subsection{Définitions, acronymes et abréviations}
 
@@ -42,7 +42,7 @@ calendriers de mèdecins.
 
 \subsection{Références}
 
-Enoncé du travail de synthèse sur la gestion de calendriers de mèdecins.
+Énoncé du travail de synthèse sur la gestion de calendriers de médecins.
 
 \subsection{Domaine du projet global}
 \newpage
@@ -72,7 +72,7 @@ Tous les attributs d'une adresse forment un identifiant.
 
 \begin{itemize}
     \item rue
-    \item numero
+    \item numéro
     \item ville
     \item pays
     \item code (= code postal)
@@ -88,12 +88,12 @@ Aucune.
 \subsubsection{Définition}
 
 Le calendrier représente tous les évènements futurs et permet
-au mèdecin d'organiser ces évènements. \\
-Un client peut ajouter un rendez-vous au calendrier d'un mèdecin.
+au médecin d'organiser ces évènements. \\
+Un client peut ajouter un rendez-vous au calendrier d'un médecin.
 
 \subsubsection{Identifiant}
 
-Mèdecin.INAMI
+Médecin.INAMI
 
 \subsubsection{Attributs}
 
@@ -105,7 +105,7 @@ Aucune.
 
 \subsubsection{Condition de création / suppression d'un objet ou de la classe}
 
-A la création d'un compte mèdecin, un calendrier est créé pour ce mèdecin. 
+A la création d'un compte médecin, un calendrier est créé pour ce médecin. 
 Il n'est pas supprimé.
 
 
@@ -115,7 +115,8 @@ Il n'est pas supprimé.
 
 Un compte représente un compte sur le site en ligne. Un compte permet la gestion 
 d'un calendrier ainsi que des paramètres personnels du client. \\
-\texttt{Compte} est la super-classe de \texttt{Compte client} et \texttt{Compte Mèdecin}. 
+\texttt{Compte} est la super classe\footnote{selon le principe d'héritage de
+l'Orienté Objet} de \texttt{Compte client} et \texttt{Compte Médecin}. 
 
 \subsubsection{Identifiant}
 
@@ -136,17 +137,17 @@ Aucune.
 
 \subsubsection{Condition de création / suppression d'un objet ou de la classe}
 
-Un compte est créé par un mèdecin pour un client, ou par un mèdecin pour lui-même
+Un compte est créé par un médecin pour un client, ou par un médecin pour lui-même
 ou par un client pour lui-même.
-Une fois créé, il n'y a pas de possibilité de supression.
+Une fois créé, il n'y a pas de possibilité de suppression.
 
 
-\subsection{Compte mèdecin}
+\subsection{Compte médecin}
 
 \subsubsection{Définition}
 
-Un compte mèdecin est un type de compte permettant au mèdecin de gérer ses rendez-vous et disponibilités
-gràce au \texttt{calendrier}.
+Un compte médecin est un type de compte permettant au médecin de gérer ses rendez-vous et disponibilités
+grâce au \texttt{calendrier}.
 
 \subsubsection{Identifiant}
 
@@ -168,7 +169,7 @@ Voir \texttt{Compte}.
 
 \subsubsection{Définition}
 
-Un compte client est un type de compte permettant au client d'ajouter des rendez-vous avec un mèdecin.
+Un compte client est un type de compte permettant au client d'ajouter des rendez-vous avec un médecin.
 Un client peut modifier ses paramètres dans son espace client.
 
 \subsubsection{Identifiant}
@@ -221,12 +222,12 @@ Date.jour + Date.mois + Date.année
 
 \subsubsection{Définition}
 
-Une disponibilité est une plage horaire dans laquelle un mèdecin accepte
+Une disponibilité est une plage horaire dans laquelle un médecin accepte
 des nouveaux rendez-vous.
 
 \subsubsection{Identifiant}
 
-Événement.date + Événement.debut + Événement.fin
+Événement.date + Événement.début + Événement.fin
 
 \subsubsection{Attributs}
 
@@ -238,18 +239,18 @@ Voir \texttt{Événement}.
 
 \subsubsection{Condition de création / suppression d'un objet ou de la classe}
 
-Une disponibilité est créé lorsqu'un mèdecin décide d'accepter de nouveaux rendez-vous ou quand un
+Une disponibilité est créé lorsqu'un médecin décide d'accepter de nouveaux rendez-vous ou quand un
 rendez-vous a été annulé par un client. Dans ce cas, le rendez-vous est transformé en disponibilité.
 
 \subsection{Événement}
 
 \subsubsection{Définition}
 
-Un évènement est un horaire pendant lequel le mèdecin peut recevoir un patient ou en accepter de nouveaux.
+Un évènement est un horaire pendant lequel le médecin peut recevoir un patient ou en accepter de nouveaux.
 
 \subsubsection{Identifiant}
 
-Événement.date + Événement.debut + Événement.fin
+Événement.date + Événement.début + Événement.fin
 
 \subsubsection{Attributs}
 
@@ -263,18 +264,18 @@ Un évènement est un horaire pendant lequel le mèdecin peut recevoir un patien
 
 \subsubsection{Contraintes d'intégrité}
 
-fin > début.
+$fin > début$.
 
 \subsubsection{Condition de création / suppression d'un objet ou de la classe}
 
-Un évènement est soit créé par un mèdecin, soit par un client. Une fois l'évènement passé,
+Un évènement est soit créé par un médecin, soit par un client. Une fois l'évènement passé,
 il est stocké dans la base de données.
 
-\subsection{Mèdecin}
+\subsection{Médecin}
 
 \subsubsection{Définition}
 
-Un mèdecin est une personne physique effectuant des activités médicales.
+Un médecin est une personne physique effectuant des activités médicales.
 
 \subsubsection{Identifiant}
 
@@ -292,7 +293,7 @@ Aucune
 
 \subsubsection{Condition de création / suppression d'un objet ou de la classe}
 
-Un mèdecin est répertorié dans la base de données une fois inscrit au site, il n'en est plus supprimé ensuite.
+Un médecin est répertorié dans la base de données une fois inscrit au site, il n'en est plus supprimé ensuite.
 
 \subsection{Moment}
 
@@ -324,7 +325,7 @@ Moment.heure + Moment.minute
 
 \subsubsection{Définition}
 
-Un patient est une personne physique s'inscrivant sur le site pour s'inscrire à des rendez-vous d'un ou plusieurs mèdecins.
+Un patient est une personne physique s'inscrivant sur le site pour s'inscrire à des rendez-vous d'un ou plusieurs médecins.
 
 \subsubsection{Identifiant}
 
@@ -340,19 +341,19 @@ Aucune
 
 \subsubsection{Condition de création / suppression d'un objet ou de la classe}
 
-Un patient est socké dans la base de données à la création de son compte client, il n'en est plus supprimé par la suite.
+Un patient est stocké dans la base de données à la création de son compte client, il n'en est plus supprimé par la suite.
 
 \subsection{Rendez-vous}
 
 \subsubsection{Définition}
 
-Un rendez-vous est un horaire créé par le client ou par le mèdecin où le client se doit 
+Un rendez-vous est un horaire créé par le client ou par le médecin où le client se doit 
 d'assister à la séance.
 Un rendez-vous peut être annulé avant la date de ce dernier par le client lui-même.
 
 \subsubsection{Identifiant}
 
-Événement.date + Événement.debut + Événement.fin
+Événement.date + Événement.début + Événement.fin
 
 \subsubsection{Attributs}
 
@@ -367,17 +368,17 @@ Aucune
 
 \subsubsection{Condition de création / suppression d'un objet ou de la classe}
 
-Un rendez-vous est créé soit par le mèdecin, soit par le client. Il n'est jamais supprimé.
+Un rendez-vous est créé soit par le médecin, soit par le client. Il n'est jamais supprimé.
 
 \subsection{Spécialité}
 
 \subsubsection{Définition}
 
-Une spécialité définit le type d'activité médicale qu'effectue le mèdecin.
+Une spécialité définit le type d'activité médicale qu'effectue le médecin.
 
 \subsubsection{Identifiant}
 
-Specialité.type
+Spécialité.type
 
 \subsubsection{Attributs}
 
@@ -426,7 +427,7 @@ Le patient ne peut avoir plusieurs compte.
 \subsubsection{Définition}
 Associe un médecin à son compte.
 \subsubsection{Contraintes d'intégrité}
-Il ne peut cumuler plus d'un seul compte et doit en possèder un pour gérer son
+Il ne peut cumuler plus d'un seul compte et doit en posséder un pour gérer son
 agenda.
 
 \subsection{Association\_gère \texttt{Médecin -> Calendrier}}
@@ -503,7 +504,7 @@ Cette association peut être brisée.
         heure & Moment & \parbox[t]{3cm}{L'heure du\\moment\\} & Entier & Valeur de 0 à 23 &
         Aucune \\
         \hline
-        INAMI & Compte mèdecin & \parbox[t]{3cm}{Le numéro \\INAMI du mèdecin\\} & Entier & \parbox[t]{2cm}{Aucun\\ domaine particulier\\}
+        INAMI & Compte médecin & \parbox[t]{3cm}{Le numéro \\INAMI du médecin\\} & Entier & \parbox[t]{2cm}{Aucun\\ domaine particulier\\}
         & Aucune \\
         \hline
         jour & Date & Le jour de la date & Entier & 1 à 31 & \parbox[t]{2cm}{Valeur \\correcte du jour selon\\ le mois\\} \\
