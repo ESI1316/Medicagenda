@@ -271,30 +271,6 @@ $fin > début$.
 Un évènement est soit créé par un médecin, soit par un client. Une fois l'évènement passé,
 il est stocké dans la base de données.
 
-\subsection{Médecin}
-
-\subsubsection{Définition}
-
-Un médecin est une personne physique effectuant des activités médicales.
-
-\subsubsection{Identifiant}
-
-INAMI.
-
-\subsubsection{Attributs}
-
-\begin{itemize}
-    \item INAMI
-\end{itemize}
-
-\subsubsection{Contraintes d'intégrité}
-
-Aucune
-
-\subsubsection{Condition de création / suppression d'un objet ou de la classe}
-
-Un médecin est répertorié dans la base de données une fois inscrit au site, il n'en est plus supprimé ensuite.
-
 \subsection{Moment}
 
 \subsubsection{Définition}
@@ -320,28 +296,6 @@ Moment.heure + Moment.minute
 \end{itemize}
 
 \subsubsection{Condition de création / suppression d'un objet ou de la classe}
-
-\subsection{Patient}
-
-\subsubsection{Définition}
-
-Un patient est une personne physique s'inscrivant sur le site pour s'inscrire à des rendez-vous d'un ou plusieurs médecins.
-
-\subsubsection{Identifiant}
-
-Un patient est représenté par son compte client, identifié par son e-mail.
-
-Compte.e-mail
-
-\subsubsection{Attributs}
-
-\subsubsection{Contraintes d'intégrité}
-
-Aucune
-
-\subsubsection{Condition de création / suppression d'un objet ou de la classe}
-
-Un patient est stocké dans la base de données à la création de son compte client, il n'en est plus supprimé par la suite.
 
 \subsection{Rendez-vous}
 
