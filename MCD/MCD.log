@@ -1,12 +1,11 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2015.4.17)  30 APR 2015 11:14
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.19)  30 APR 2015 11:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **MCD.tex
 (./MCD.tex
 LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, fr
-ench, basque, loaded.
+Babel <3.9h> and hyphenation patterns for 78 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -243,29 +242,29 @@ Now handling font encoding U ...
    defining Unicode char U+2423 (decimal 9251)
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2008/07/08 v3.8m The Babel package
+Package: babel 2013/12/03 3.9h The Babel package
 
-(/usr/share/texlive/texmf-dist/tex/generic/babel/frenchb.ldf
-Language: frenchb 2010/08/21 v2.5a French support from the babel system
+(/usr/share/texlive/texmf-dist/tex/generic/babel-french/frenchb.ldf
+Language: frenchb 2013/12/30 v2.6g French support from the babel system
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2008/07/08 v3.8m Babel common definitions
+File: babel.def 2013/12/03 3.9h Babel common definitions
 \babel@savecnt=\count88
 \U@D=\dimen103
 )
-Package babel Info: Making : an active character on input line 234.
-Package babel Info: Making ; an active character on input line 235.
-Package babel Info: Making ! an active character on input line 236.
-Package babel Info: Making ? an active character on input line 237.
+\FB@interchartokenstateORI=\count89
+Package babel Info: Making : an active character on input line 244.
+Package babel Info: Making ; an active character on input line 245.
+Package babel Info: Making ! an active character on input line 246.
+Package babel Info: Making ? an active character on input line 247.
 \FB@Mht=\dimen104
-\std@mcc=\count89
-\dec@mcc=\count90
+\std@mcc=\count90
+\dec@mcc=\count91
+\listindentFB=\skip43
+\labelwidthFB=\skip44
+\leftmarginFB=\skip45
 \parindentFFN=\dimen105
-
-*************************************
-* Local config file frenchb.cfg used
-*
-(/usr/share/texlive/texmf-dist/tex/generic/babel/frenchb.cfg)))
+))
 (/usr/share/texlive/texmf-dist/tex/latex/carlisle/scalefnt.sty)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
@@ -301,35 +300,35 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count91
+\Gread@gobject=\count92
 ))
 \Gin@req@height=\dimen106
 \Gin@req@width=\dimen107
 )
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
-Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
-\LTleft=\skip43
-\LTright=\skip44
-\LTpre=\skip45
-\LTpost=\skip46
-\LTchunksize=\count92
+\LTleft=\skip46
+\LTright=\skip47
+\LTpre=\skip48
+\LTpost=\skip49
+\LTchunksize=\count93
 \LTcapwidth=\dimen108
 \LT@head=\box26
 \LT@firsthead=\box27
 \LT@foot=\box28
 \LT@lastfoot=\box29
-\LT@cols=\count93
-\LT@rows=\count94
-\c@LT@tables=\count95
-\c@LT@chunks=\count96
+\LT@cols=\count94
+\LT@rows=\count95
+\c@LT@tables=\count96
+\c@LT@chunks=\count97
 \LT@p@ftn=\toks17
 )
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2012/05/13 v6.82q Hypertext links for LaTeX
+Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
@@ -379,64 +378,68 @@ Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+)
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen109
-\Hy@linkcounter=\count97
-\Hy@pagecounter=\count98
+\Hy@linkcounter=\count98
+\Hy@pagecounter=\count99
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2012/05/13 v6.82q Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count99
+\Hy@SavedSpaceFactor=\count100
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Option `bookmarks' set `true' on input line 3941.
-Package hyperref Info: Option `colorlinks' set `false' on input line 3941.
-Package hyperref Info: Hyper figures OFF on input line 4062.
-Package hyperref Info: Link nesting OFF on input line 4067.
-Package hyperref Info: Hyper index ON on input line 4070.
-Package hyperref Info: Plain pages OFF on input line 4077.
-Package hyperref Info: Backreferencing OFF on input line 4082.
+Package hyperref Info: Option `bookmarks' set `true' on input line 4319.
+Package hyperref Info: Option `colorlinks' set `false' on input line 4319.
+Package hyperref Info: Hyper figures OFF on input line 4443.
+Package hyperref Info: Link nesting OFF on input line 4448.
+Package hyperref Info: Hyper index ON on input line 4451.
+Package hyperref Info: Plain pages OFF on input line 4458.
+Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4300.
-\c@Hy@tempcnt=\count100
-LaTeX Info: Redefining \url on input line 4653.
-\Fld@menulength=\count101
-\Field@Width=\dimen110
-\Fld@charsize=\dimen111
-Package hyperref Info: Hyper figures OFF on input line 5773.
-Package hyperref Info: Link nesting OFF on input line 5778.
-Package hyperref Info: Hyper index ON on input line 5781.
-Package hyperref Info: backreferencing OFF on input line 5788.
-Package hyperref Info: Link coloring OFF on input line 5793.
-Package hyperref Info: Link coloring with OCG OFF on input line 5798.
-Package hyperref Info: PDF/A mode OFF on input line 5803.
-LaTeX Info: Redefining \ref on input line 5843.
-LaTeX Info: Redefining \pageref on input line 5847.
-\Hy@abspage=\count102
-\c@Item=\count103
-\c@Hfootnote=\count104
+Package hyperref Info: Bookmarks ON on input line 4688.
+\c@Hy@tempcnt=\count101
+LaTeX Info: Redefining \url on input line 5041.
+\XeTeXLinkMargin=\dimen110
+\Fld@menulength=\count102
+\Field@Width=\dimen111
+\Fld@charsize=\dimen112
+Package hyperref Info: Hyper figures OFF on input line 6295.
+Package hyperref Info: Link nesting OFF on input line 6300.
+Package hyperref Info: Hyper index ON on input line 6303.
+Package hyperref Info: backreferencing OFF on input line 6310.
+Package hyperref Info: Link coloring OFF on input line 6315.
+Package hyperref Info: Link coloring with OCG OFF on input line 6320.
+Package hyperref Info: PDF/A mode OFF on input line 6325.
+LaTeX Info: Redefining \ref on input line 6365.
+LaTeX Info: Redefining \pageref on input line 6369.
+\Hy@abspage=\count103
+\c@Item=\count104
+\c@Hfootnote=\count105
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2012/05/13 v6.82q Hyperref driver for pdfTeX
-\Fld@listcount=\count105
-\c@bookmark@seq@number=\count106
+File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
+\Fld@listcount=\count106
+\c@bookmark@seq@number=\count107
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip47
+\Hy@SectionHShift=\skip50
 )
 (./MCD.aux)
 \openout1 = `MCD.aux'.
@@ -460,16 +463,16 @@ LaTeX Info: Redefining \dots on input line 17.
 LaTeX Info: Redefining \up on input line 17.
  (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count107
-\scratchdimen=\dimen112
+\scratchcounter=\count108
+\scratchdimen=\dimen113
 \scratchbox=\box30
-\nofMPsegments=\count108
-\nofMParguments=\count109
+\nofMPsegments=\count109
+\nofMParguments=\count110
 \everyMPshowfont=\toks18
-\MPscratchCnt=\count110
-\MPscratchDim=\dimen113
-\MPnumerator=\count111
-\makeMPintoPDFobject=\count112
+\MPscratchCnt=\count111
+\MPscratchDim=\dimen114
+\MPnumerator=\count112
+\makeMPintoPDFobject=\count113
 \everyMPtoPDFconversion=\toks19
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -490,12 +493,12 @@ e
 Package hyperref Info: Link coloring OFF on input line 17.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count113
+\c@section@level=\count114
 )
 LaTeX Info: Redefining \ref on input line 17.
 LaTeX Info: Redefining \pageref on input line 17.
@@ -506,7 +509,7 @@ LaTeX Info: Redefining \nameref on input line 17.
 \openout3 = `MCD.out'.
 
  (./title_mcd.tex
-<../ressources/logo.png, id=120, 90.3375pt x 170.6375pt>
+<../ressources/logo.png, id=112, 90.3375pt x 170.6375pt>
 File: ../ressources/logo.png Graphic file (type png)
 
 <use ../ressources/logo.png>
@@ -524,18 +527,18 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 3.
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 88.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 76.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-Overfull \hbox (19.68292pt too wide) in paragraph at lines 94--94
+Overfull \hbox (19.68292pt too wide) in paragraph at lines 82--82
  [][] [][]\T1/cmr/m/n/10.95 Association_est as-si-gné à \T1/cmtt/m/n/10.95 Rend
 ez-vous -> Compte patient[] []  
  []
 
 
-Overfull \hbox (34.76894pt too wide) in paragraph at lines 100--100
+Overfull \hbox (34.76894pt too wide) in paragraph at lines 88--88
  [][] [][]\T1/cmr/m/n/10.95 Association_Se trans-forme en \T1/cmtt/m/n/10.95 Di
 sponibilité -> Rendez-vous[] []  
  []
@@ -560,7 +563,7 @@ been already used, duplicate ignored
 l.48 \newpage
               [2
 
-] <MCD.jpg, id=185, 764.8575pt x 532.99126pt>
+] <MCD.jpg, id=175, 764.8575pt x 532.99126pt>
 File: MCD.jpg Graphic file (type jpg)
  <use MCD.jpg>
 Package pdftex.def Info: MCD.jpg used on input line 53.
@@ -892,50 +895,36 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 452.
  (./MCD.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 452.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 452.
-
-
-Package rerunfilecheck Warning: File `MCD.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `MCD.out':
-(rerunfilecheck)             Before: 23562633C4C99202F9E95F76363AF160;2216
-(rerunfilecheck)             After:  C44E486F18FE68826838F91EB92C200F;2089.
+Package rerunfilecheck Info: File `MCD.out' has not changed.
+(rerunfilecheck)             Checksum: C44E486F18FE68826838F91EB92C200F;2089.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 452.
  ) 
 Here is how much of TeX's memory you used:
- 6313 strings out of 495030
- 90072 string characters out of 3180761
- 212507 words of memory out of 3000000
- 9317 multiletter control sequences out of 15000+200000
- 19651 words of font info for 42 fonts, out of 3000000 for 9000
- 14 hyphenation exceptions out of 8191
- 29i,7n,29p,315b,517s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{subsection.1.3.13} has been referenced but does n
-ot exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.3.12} has been referenced but does not
- exist, replaced by a fixed one
-
- </home/g39631/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1200.600pk> </home/g3
-9631/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm0900.600pk> </home/g39631/.texm
-f-var/fonts/pk/ljfour/jknappen/ec/ecrm0800.600pk> </home/g39631/.texmf-var/font
-s/pk/ljfour/jknappen/ec/eccc1095.600pk> </home/g39631/.texmf-var/fonts/pk/ljfou
-r/jknappen/ec/ecbx1200.600pk> </home/g39631/.texmf-var/fonts/pk/ljfour/jknappen
-/ec/ecbx1440.600pk> </home/g39631/.texmf-var/fonts/pk/ljfour/jknappen/ec/ectt10
-95.600pk> </home/g39631/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1095.600pk> 
-</home/g39631/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488.600pk> </home/g39
-631/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1095.600pk> </home/g39631/.texmf
--var/fonts/pk/ljfour/jknappen/ec/eccc1200.600pk> </home/g39631/.texmf-var/fonts
-/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/g39631/.texmf-var/fonts/pk/ljfour
-/jknappen/ec/ecti1200.600pk> </home/g39631/.texmf-var/fonts/pk/ljfour/jknappen/
-ec/ecbx2074.600pk> </home/g39631/.texmf-var/fonts/pk/ljfour/jknappen/ec/eccc144
-0.600pk> </home/g39631/.texmf-var/fonts/pk/ljfour/jknappen/ec/eccc1728.600pk></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
-Output written on MCD.pdf (15 pages, 284097 bytes).
+ 6575 strings out of 493304
+ 94263 string characters out of 6139871
+ 224751 words of memory out of 5000000
+ 9844 multiletter control sequences out of 15000+600000
+ 19651 words of font info for 42 fonts, out of 8000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 29i,7n,29p,315b,531s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf/fonts/
+type1/public/cm-super/sfbx1095.pfb></usr/share/texmf/fonts/type1/public/cm-supe
+r/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr
+/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/fonts/t
+ype1/public/cm-super/sfbx2488.pfb></usr/share/texmf/fonts/type1/public/cm-super
+/sfcc1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfcc1200.pfb></usr/
+share/texmf/fonts/type1/public/cm-super/sfcc1440.pfb></usr/share/texmf/fonts/ty
+pe1/public/cm-super/sfcc1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/
+sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0900.pfb></usr/s
+hare/texmf/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf/fonts/typ
+e1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/s
+fti1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1095.pfb></usr/sh
+are/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on MCD.pdf (15 pages, 411905 bytes).
 PDF statistics:
- 785 PDF objects out of 1000 (max. 8388607)
- 361 compressed objects within 4 object streams
- 111 named destinations out of 1000 (max. 500000)
- 243 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 377 PDF objects out of 1000 (max. 8388607)
+ 336 compressed objects within 4 object streams
+ 109 named destinations out of 1000 (max. 500000)
+ 227 words of extra memory for PDF output out of 10000 (max. 10000000)
 
