@@ -17,4 +17,98 @@ pdfkeywords={UML, ISO/IEC 19505-1:2012, Medicagenda, Projet, analyse, ESI}]{hype
 \begin{document}
 \input{./title_uc_spec_1106.tex}
 \tableofcontents
+
+\chapter{UC Specification : Envoyer une notification}
+
+\section{Introdcution}
+
+\subsection{Objectifs de ce document}
+
+Ce document présente les spécifications fonctionnelles du UC1106 - Envoyer une notification.
+
+\subsection{Domaine de définition de ce document}
+
+\section{Définition du Use Case}
+
+\subsection{Identifiant et nom}
+
+UC1106 - Envoyer une notification.
+
+\subsection{Brève description}
+
+Avant un rendez-vous, le système envoie un rappel au patient pour le prévenir d'un rendez-vous.
+Le patient peut choisir le temps avant le rendez-vous pour envoyer le rappel ainsi que le moyen
+de communication (e-mail, sms, etc.).
+
+\section{Flux}
+
+\subsection{Flux de base}
+
+Cet UC est déclenché automatiquement un certain nombre d'heure avant un rendez-vous. Quand un patient ou un mèdecin
+définissent un rendez-vous, un envoi de notification est programmé. L'heure est défini grâce aux paramètres utilisateur, de même
+pour le type d'envoi. Le patient peut annuler un rendez-vous, si le rendez-vous est annulé alors que la notification est déjà
+programmé, la notification est annulée et une nouvelle notification confirmant l'annulation est envoyé directement au 
+patient.
+
+\subsection{Flux alternatif}
+
+\subsubsection{Interruption du UC}
+
+Si le système subit une panne, il faudra contacter l'administrateur système.
+Celui-ci lancera un UC pour relancer les notifications non envoyées avec un message d'excuse accompagnant ces
+notifications.
+
+
+\section{Acteurs, mode, etc.}
+
+\subsection{Acteurs}
+
+Le SIA est l'acteur principale, c'est à dire qu'en cas de panne, il faudra s'adresser au 
+responsable du système.
+
+\subsection{Mode}
+
+Automatisé unitaire.
+
+\subsection{Evènement déclencheur}
+
+Après que le patient ou le mèdecin ait créé un rendez-vous avec l'UC1104. 
+Un envoi de notification est programmé à une certaine heure avant l'heure du rendez-vous selon les 
+paramètres utilisateurs du patient.
+
+\section{Pré-conditions}
+
+Le patient doit avoir un rendez-vous de prévu.
+
+\section{Post-conditions}
+
+Aucune.
+
+\section{Point d'inclusions et d'extensions}
+
+SO. (Sans Objets).
+\section{Règles de gestion}
+
+\subsection{Classes concernées}
+
+La classe Rendez-vous et Compte Patient sont concernées en lecture seulement.
+
+\subsection{Validation des encodages de données}
+
+Aucune données n'est transmise de cette manière au système.
+
+\subsection{Validation des données en sortie}
+
+Aucune données transmises par le système ne nécessite une telle vérification.
+
+\section{Diagramme d'activité}
+
+Cet UC ne possède pas de diagramme d'activité, il est du ressort du système d'agir en fonctions
+des choix de l'utilisateur.
+
+\section{Interface utilisateur}
+
+Etant un UC automatisé, cet UC ne possède pas d'interface graphique.
+
+
 \end{document}
