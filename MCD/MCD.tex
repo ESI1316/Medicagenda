@@ -327,32 +327,32 @@ Aucune.
 \newpage
 \section{Associations}
 
-\subsection{Association\_possède \texttt{Compte médecin-> Spécialité}}
+\subsection{possède \texttt{Compte médecin-> Spécialité}}
 \subsubsection{Définition}
 Associe des spécialités à un médecin par le biais de son compte.
 \subsubsection{Contraintes d'intégrité}
 Le médecin ne peut posséder deux fois la même spécialité.
 
-\subsection{Association\_tient un \texttt{Compte médecin -> Calendrier}}
+\subsection{tient un \texttt{Compte médecin -> Calendrier}}
 \subsubsection{Définition}
 Associe un calendrier de disponibilités à un médecin.
 \subsubsection{Contraintes d'intégrité}
 Il pourrait éventuellement cumuler plusieurs calendrier pour subdiviser ses
 rendez-vous.
 
-\subsection{Association\_est assigné à \texttt{Rendez-vous -> Compte patient}}
+\subsection{est assigné à \texttt{Rendez-vous -> Compte patient}}
 \subsubsection{Définition}
 Associe un patient à un rendez-vous.
 \subsubsection{Contraintes d'intégrité}
 Un patient peut cumuler plusieurs rendez-vous mais jamais au même moment.
 
-\subsection{Association\_est rempli de \texttt{Calendrier -> Événement}}
+\subsection{est rempli de \texttt{Calendrier -> Événement}}
 \subsubsection{Définition}
 Associe un calendrier à des évènements qui le composent.
 \subsubsection{Contraintes d'intégrité}
 \texttt{Aucune}
 
-\subsection{Association\_Se transforme en \texttt{Disponibilité -> Rendez-vous}}
+\subsection{Se transforme en \texttt{Disponibilité -> Rendez-vous}}
 \subsubsection{Définition}
 Associe une disponibilité entant que rendez-vous.
 \subsubsection{Contraintes d'intégrité}
