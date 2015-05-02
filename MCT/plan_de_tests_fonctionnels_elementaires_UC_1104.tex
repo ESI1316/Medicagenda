@@ -1,0 +1,166 @@
+\documentclass[a4paper, 11pt]{report}
+
+\usepackage[utf8]{inputenc}                                                      
+\usepackage[french]{babel}                                                       
+\usepackage[T1]{fontenc}  
+\usepackage[pdftex]{graphicx}                                                    
+\usepackage{url}                                                                 
+\usepackage{longtable}
+\usepackage[bookmarks, colorlinks=false, pdfborder={0 0 0},
+	pdftitle={Medicagenda}, 
+	pdfauthor={Knop Florian, Kriwin Paul, Placentino Simon},
+	pdfsubject={Medicagenda},           
+pdfkeywords={UML, ISO/IEC 19505-1:2012, Medicagenda, Projet, analyse, ESI}]{hyperref}   
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}    
+
+\begin{document}
+\input{./title_uc_test_1104.tex}
+\tableofcontents
+\chapter{Plan de test fonctionnles élémentaires \texttt{U.C. 1104}}
+\section{Introduction}
+\subsection{Objectifs du document}
+du document Ce document présente  le plan des tests fonctionnels du UC 1104 -
+définir un rendez-vous. 
+\subsection{Domaine de définition du document}
+Ce document
+ne présente
+que les
+scénarios
+correspondant
+à la
+définition
+d’un
+rendez-vous
+(correspondant
+au diagramme
+d’activités
+de la
+description
+fonctionnelle
+du UC).
+\subsection{Définitions, acronymes et abréviations}
+Définition INAMI : voir étude de cas et MCD\footnote{\href{../MCD/MCD.pdf}{voir document M.C.D.}}.
+\subsection{Références}
+\begin{itemize}
+	\item[] Etude de cas de l'agenda
+		médical\footnote{\href{../Enonce_Travail_Synthese_14-15.pdf}{voir
+		étude de cas}}
+	\item[] M.C.D. de \texttt{Medicagenda}\footnote{\href{../MCD/MCD.pdf}{voir document M.C.D.}}
+	\item[] M.C.T. de \texttt{Medicagenda}\footnote{\href{./MCT.pdf}{voir document M.C.T.}}
+	\item[] Spécifications fonctionnelles du \texttt{U.C.
+		1104}\footnote{\href{./specifications_fonctionnelles_UC_1104_definir_un_rendez-vous.pdf}{Voir
+			spécifications fonctionnelles du \texttt{U.C. 1104}}}
+	\end{itemize}
+
+	\paragraph{Remarque}
+	dans le plan de test, il est prévu de faire appel aux UC 1101a/b – enregistrer un compte
+	patient/médecin ainsi qu’à l’UC1103 - définir une disponibilité. Les UC 1101a/b et 1103 devront
+	donc être réalisé et testé avant le présent UC 1104.
+
+	\section{Types de tests élémentaires fonctionnels}
+	\subsection{Validation des règles de saisie}
+	\textbf{UC interactif}
+	Validation des formats et valeurs des champs: voir description de l’interface et
+	des messages d’erreur liés à son utilisation.
+
+	La date et heure du rendez-vous à réserver ne doivent pas être antérieurs au
+	moment où a lieu la réservation. 
+	\subsection{Validation des règles de calcul}
+	\texttt{S.O.}
+	\subsection{Validation des mises à jour du SI}
+	Vérification de la création correcte des nouveaux enregistrements dans la base
+	de données, pour les différents scénarios décrits ci-dessous, ainsi que des
+	liens entre objets de classes différentes. 
+	Cela implique que le nouveau rendez-vous créé concerne les bons comptes
+	utilisateurs, est à la date et heure convenue et que la plage horaire occupée
+	par celui-ci soit dorénavant indisponible.
+	\subsection{Validation des outputs utilisateurs}
+	Vérification que les messages d’erreurs et de validations apparaissent
+	pertinement et s’affichent correctement. Les messages de récapitulation de la
+	réservation doivent être pertinants pour les deux types d’utilisateurs (médecin
+	et utilisateur) et exempts de toutes erreurs.
+	\subsection{Tests de consolidation}
+
+	\subsection{Tests de saisie}
+	\subsection{Cas extrêmes}
+	Au cours de différents scénarios, tests de l’abandon du UC et vérification que
+	la base de données est effectivement restée intacte.
+	\section{Scénarios de tests}
+	Scenario |   cas  |         description    |   Resutat attendu 
+
+	\begin{itemize}
+		\item[\texttt{scenario 0. cas 1.}]
+			\begin{itemize}
+				\item description: \\
+					Le patient possède déjà un compte, a sélectionné un médecin ou une date ou une
+					plage horaire mais désire annuler son choix pour en séléctionner un/une autre.
+				\item resutat:\\
+					La base de donnée n’est jamais modifiée, et la fenêtre de l’étape précédente
+					est réaffichée.
+			\end{itemize}
+		\item[\texttt{scenario 1. cas 1.1}]
+			\begin{itemize}
+				\item description:  \\
+					Le patient possède déjà un compte, a sélectionné et validé
+					un médecin et une date et heure disponible.
+				\item resutat: \\
+					un fenêtre affiche le calendrier et la barre de recherche
+					pour entrer le nom du medecin. 
+					Une fois ce dernier et une date valide séléctionnés, est
+					affichée une grille horaire de cette date avec les
+					disponibilités du médecin. Après que la plage horraire eu
+					été séléctionnée, 
+					le message récapitulatif de la réservation s’est affiché et
+					a été validé. 
+					Le nouveau rendez-vous est enregistré, il s’affiche dans le
+					calendrier du patient et dans celui du médecin, la
+					disponibilité correspondant à la plage horaire du nouveau
+					rendez-vous n’est plus.
+			\end{itemize}
+		\item[\texttt{scenario 1. cas 1.2}]
+			\begin{itemize}
+				\item description:  \\
+					idem que 1.1 mais le patient n’est pas enregistré
+				\item resutat: \\
+					idem que 1.1 mais le patient s’ enregistre au préalable
+					(appel de l’UC1101)
+			\end{itemize}
+		\item[\texttt{scenario 2. cas 2.1}]
+			\begin{itemize}
+				\item description:\\
+					Le patient séléctionne un médecin et essaye de sélectionner
+					une date ne contenant pas de disponibilité.
+				\item resutat: \\
+					Status quo, les dates concernées doivent êtres non clicable
+					et rien ne doit alors se passer.
+			\end{itemize}
+		\item[\texttt{scenario 2. cas 2.2}]
+			\begin{itemize}
+				\item description:\\
+					Le patient séléctionne un médecin et essaye de sélectionner
+					une date antérieure au moment de la réservation.
+				\item resutat: \\
+					Idem que 2.1.
+			\end{itemize}
+		\item[\texttt{scenario 2. cas 2.3}]
+			\begin{itemize}
+				\item description:\\
+					Le patient séléctionne un médecin et essaye de sélectionner
+					une date à laquelle le médecin possède des disponibilités,
+					mais une plage horaire à laquelle il possède déjà un
+					rendez-vous.
+				\item resutat: \\
+					status quo, les cases représentant ces disponibilités
+					doivent être rougie avec un message décrivant le fait que le
+					patient a déjà un rendez vous à ce moment là et donc,
+					doivent êtres non clicable et rien ne doit alors se passer..
+				\item 
+			\end{itemize}
+	\end{itemize}
+	\section{Valeurs}
+	\subsection{Valeurs d'initialisation}
+	\subsection{Valeurs spécifiques}
+
+
+	\end{document}
