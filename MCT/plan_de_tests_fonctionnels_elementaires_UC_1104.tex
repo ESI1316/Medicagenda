@@ -23,21 +23,8 @@ pdfkeywords={UML, ISO/IEC 19505-1:2012, Medicagenda, Projet, analyse, ESI}]{hype
 du document Ce document présente  le plan des tests fonctionnels du UC 1104 -
 définir un rendez-vous. 
 \subsection{Domaine de définition du document}
-Ce document
-ne présente
-que les
-scénarios
-correspondant
-à la
-définition
-d’un
-rendez-vous
-(correspondant
-au diagramme
-d’activités
-de la
-description
-fonctionnelle
+Ce document ne présente que les scénarios correspondant à la définition d’un
+rendez-vous (correspondant au diagramme d’activités de la description fonctionnelle
 du UC).
 \subsection{Définitions, acronymes et abréviations}
 Définition INAMI : voir étude de cas et MCD\footnote{\href{../MCD/MCD.pdf}{voir document M.C.D.}}.
@@ -90,16 +77,16 @@ Définition INAMI : voir étude de cas et MCD\footnote{\href{../MCD/MCD.pdf}{voi
 	Scenario |   cas  |         description    |   Resutat attendu 
 
 	\begin{itemize}
-		\item[\texttt{scenario 0. cas 1.}]
+		\item[] \texttt{scenario 0. cas 1.} 
 			\begin{itemize}
 				\item description: \\
 					Le patient possède déjà un compte, a sélectionné un médecin ou une date ou une
 					plage horaire mais désire annuler son choix pour en séléctionner un/une autre.
 				\item resutat:\\
 					La base de donnée n’est jamais modifiée, et la fenêtre de l’étape précédente
-					est réaffichée.
+					est réaffichée.\\
 			\end{itemize}
-		\item[\texttt{scenario 1. cas 1.1}]
+		\item[] \texttt{scenario 1. cas 1.1}
 			\begin{itemize}
 				\item description:  \\
 					Le patient possède déjà un compte, a sélectionné et validé
@@ -116,34 +103,34 @@ Définition INAMI : voir étude de cas et MCD\footnote{\href{../MCD/MCD.pdf}{voi
 					Le nouveau rendez-vous est enregistré, il s’affiche dans le
 					calendrier du patient et dans celui du médecin, la
 					disponibilité correspondant à la plage horaire du nouveau
-					rendez-vous n’est plus.
+					rendez-vous n’est plus.\\
 			\end{itemize}
-		\item[\texttt{scenario 1. cas 1.2}]
+		\item[] \texttt{scenario 1. cas 1.2}
 			\begin{itemize}
 				\item description:  \\
 					idem que 1.1 mais le patient n’est pas enregistré
 				\item resutat: \\
 					idem que 1.1 mais le patient s’ enregistre au préalable
-					(appel de l’UC1101)
+					(appel de l’UC1101)\\
 			\end{itemize}
-		\item[\texttt{scenario 2. cas 2.1}]
+		\item[] \texttt{scenario 2. cas 2.1}
 			\begin{itemize}
 				\item description:\\
 					Le patient séléctionne un médecin et essaye de sélectionner
 					une date ne contenant pas de disponibilité.
 				\item resutat: \\
 					Status quo, les dates concernées doivent êtres non clicable
-					et rien ne doit alors se passer.
+					et rien ne doit alors se passer.\\
 			\end{itemize}
-		\item[\texttt{scenario 2. cas 2.2}]
+		\item[] \texttt{scenario 2. cas 2.2}
 			\begin{itemize}
 				\item description:\\
 					Le patient séléctionne un médecin et essaye de sélectionner
 					une date antérieure au moment de la réservation.
 				\item resutat: \\
-					Idem que 2.1.
+					Idem que 2.1.\\
 			\end{itemize}
-		\item[\texttt{scenario 2. cas 2.3}]
+		\item[] \texttt{scenario 2. cas 2.3}
 			\begin{itemize}
 				\item description:\\
 					Le patient séléctionne un médecin et essaye de sélectionner
@@ -154,13 +141,24 @@ Définition INAMI : voir étude de cas et MCD\footnote{\href{../MCD/MCD.pdf}{voi
 					status quo, les cases représentant ces disponibilités
 					doivent être rougie avec un message décrivant le fait que le
 					patient a déjà un rendez vous à ce moment là et donc,
-					doivent êtres non clicable et rien ne doit alors se passer..
-				\item 
+					doivent êtres non clicable et rien ne doit alors se passer.\\
 			\end{itemize}
 	\end{itemize}
+	\newpage
 	\section{Valeurs}
 	\subsection{Valeurs d'initialisation}
+	Pour pouvoir faire les tests des scénarios 1 et 2, il faudra disposer d’une
+	base de données contenant un nombre minimal de comtes médecins avec
+	disponibilités, ainsi que de quelques comptes patients.
+	Il faudra également disposer du \texttt{U.C. 1101} testé qui peut être appelé par le
+	présent \texttt{U.C. 1104}.
 	\subsection{Valeurs spécifiques}
-
-
+	Avant les tests, il faut constituer la base de données de tests et des cas
+	de tests avec des disponibilités et rendez-vous déjà présents dans les
+	calendrier des médecins et patients (ne pas oublier que l’environnement de
+	tests (comme l’environnement de développement) doit être séparé de
+	l’environnement de production).
+	Les données spécifiques se retrouveront dans la base de données qui sera
+	mise à la disposition des testeurs. Pour ``peupler'' cette base de données, il
+	sera fait appel à des outils d’encodage rapide de données.
 	\end{document}
