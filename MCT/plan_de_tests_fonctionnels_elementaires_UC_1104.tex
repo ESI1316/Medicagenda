@@ -6,7 +6,7 @@ définir un rendez-vous.
 \subsection{Domaine de définition du document}
 Ce document ne présente que les scénarios correspondant à la définition d’un
 rendez-vous (correspondant au diagramme d’activités de la description fonctionnelle
-du UC).
+du \texttt{U.C.}).
 \subsection{Définitions, acronymes et abréviations}
 Définition INAMI : voir étude de cas et MCD\footnote{\href{../MCD/MCD.pdf}{voir document M.C.D.}}.
 \subsection{Références}
@@ -23,15 +23,15 @@ Définition INAMI : voir étude de cas et MCD\footnote{\href{../MCD/MCD.pdf}{voi
 
 	\paragraph{Remarque}
 	dans le plan de test, il est prévu de faire appel aux \texttt{U.C. 1101a/b} 
-	\textbf{enregistrer un compte patient/médecin} ainsi qu'à l'\texttt{U.C. 1103}
+	\textbf{enregistrer un compte patient/médecin} ainsi qu'au \texttt{U.C. 1103}
 	\textbf{définir une disponibilité}.
 	Les \texttt{U.C. 1101a/b} et \texttt{1103} devront
 	donc être réalisés et testés avant le présent \texttt{U.C. 1104}.
 
 	\section{Types de tests élémentaires fonctionnels}
 	\subsection{Validation des règles de saisie}
-	\textbf{UC interactif}
-	Validation des formats et valeurs des champs: voir description de l’interface et
+	\textbf{\texttt{U.C.} interactif}
+	Validation des formats et valeurs des champs: voir description de l'interface et
 	des messages d’erreur liés à son utilisation.
 
 	La date et heure du rendez-vous à réserver ne doivent pas être antérieurs au
@@ -69,7 +69,7 @@ Définition INAMI : voir étude de cas et MCD\footnote{\href{../MCD/MCD.pdf}{voi
 					plage horaire mais désire annuler son choix pour en sélectionner un/une autre.
 				\item résultat:\\
 					La base de donnée n’est jamais modifiée, et la fenêtre de l’étape précédente
-					est réaffichée.\\
+					est ré affichée.\\
 			\end{itemize}
 		\item[] \texttt{scénario 1. cas 1.1}
 			\begin{itemize}
@@ -78,11 +78,11 @@ Définition INAMI : voir étude de cas et MCD\footnote{\href{../MCD/MCD.pdf}{voi
 					un médecin et une date et heure disponible.
 				\item résultat: \\
 					un fenêtre affiche le calendrier et la barre de recherche
-					pour entrer le nom du medecin. 
-					Une fois ce dernier et une date valide séléctionnés, est
+					pour entrer le nom du médecin. 
+					Une fois ce dernier et une date valide sélectionnés, est
 					affichée une grille horaire de cette date avec les
-					disponibilités du médecin. Après que la plage horraire eu
-					été séléctionnée, 
+					disponibilités du médecin. Après que la plage horaire eu
+					été sélectionnée, 
 					le message récapitulatif de la réservation s’est affiché et
 					a été validé. 
 					Le nouveau rendez-vous est enregistré, il s’affiche dans le

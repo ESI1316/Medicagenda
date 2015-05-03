@@ -3,11 +3,11 @@
 \section{Introduction}
 
 \subsection{Objectifs du document}
-Ce document présente aux utilisateurs les spécifications fonctionnelles du UC,
+Ce document présente aux utilisateurs les spécifications fonctionnelles du \texttt{U.C.},
 1104, Définir un rendez-vous, (C, R) afin que le médecin puisse le valider.
 
 \subsection{Domaine de définition du document}
-La description du UC est complète pour les points 2 à 8. Par contre, le
+La description du \texttt{U.C.} est complète pour les points 2 à 8. Par contre, le
 diagramme d’activités se limite à celui qui présente la création d’un nouveau 
 rendez-vous (il faudrait y ajouter la suppression d’un rendez-vous). 
 
@@ -16,7 +16,7 @@ Définition INAMI : voir étude de cas et MCD\footnote{\href{../MCD/MCD.pdf}{voi
 
 \subsection{Références}
 \begin{itemize}
-	\item[] Etude de cas de l'agenda
+	\item[] Étude de cas de l'agenda
 		médical\footnote{\href{../Enonce_Travail_Synthese_14-15.pdf}{voir
 		étude de cas}}
 	\item[] M.C.D. de \texttt{Medicagenda}\footnote{\href{../MCD/MCD.pdf}{voir document M.C.D.}}
@@ -26,9 +26,9 @@ Définition INAMI : voir étude de cas et MCD\footnote{\href{../MCD/MCD.pdf}{voi
 
 \section{Définition de Use Case}
 \subsection{Identifiant et nom}
-UC 1104 - Définir un rendez-vous (C, R).
+\texttt{U.C. 1104} - Définir un rendez-vous (C, R).
 \subsection{Brève description}
-Ce UC permet au médecin ou au patient de définir un rendez-vous.
+Ce \texttt{U.C.} permet au médecin ou au patient de définir un rendez-vous.
 \subsubsection{Définir un rendez-vous}
 Cette définition peut se faire
 \begin{itemize}
@@ -41,10 +41,10 @@ La définition implique \texttt{l'enregistrement d'un compte patient} si il n'ex
 
 \section{Flux}
 \subsection{Flux de base}
-Le patient commence par s'indentifier sur son compte personnel. 
+Le patient commence par s'identifier sur son compte personnel. 
 Si son compte n'existe pas, un message apparaitra pour le prévenir et l'inviter
 à le créer. Il y aura, si acceptation, affichage des champs obligatoires à
-remplir. Après validation et confirmation, il peut s'indentifier auprès de la plateforme.
+remplir. Après validation et confirmation, il peut s'identifier auprès de la plateforme.
 Le patient va, ensuite, sélectionner le médecin auprès duquel il souhaite
 prendre rendez-vous à travers une boite de recherche ou un menu déroulant par
 ordre :
@@ -102,8 +102,8 @@ Pour créer un agenda public.
 Pour permettre au patient de créer un rendez-vous.
 
 \section{Conditions postérieures}
-Si abandon du UC, le système se retrouve dans l’état où il était avant le
-lancement du UC.
+Si abandon du \texttt{U.C.}, le système se retrouve dans l'état où il était avant le
+lancement du \texttt{U.C.}.
 \newpage
 
 \section{Points d'inclusion et d'extension}
@@ -126,7 +126,7 @@ lancement du UC.
 \end{center}
 \subsection{Validation des encodages de données}
 Les données seront conformes aux formats, aux types et aux contraintes définis
-dans le M.C.D. Sinon, affichage d’un message (message standard de l’interface) 
+dans le M.C.D. Sinon, affichage d’un message (message standard de l'interface) 
 demandant la correction avant sauvegarde des données.
 En particulier, validation du numéro INAMI encodé par un organisme externe.
 
@@ -143,7 +143,7 @@ En particulier, validation du numéro INAMI encodé par un organisme externe.
 \begin{figure}[hb]
 	\centering
 	\includegraphics[scale=0.4]{MCT/activiteUC1104.jpg}
-	\caption{Diagramme d'activité : UC 1104}
+	\caption{Diagramme d'activité : \texttt{U.C. 1104}}
 	\label{fig:act1104}
 \end{figure}
 \newpage

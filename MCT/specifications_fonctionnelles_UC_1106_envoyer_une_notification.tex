@@ -1,10 +1,10 @@
-\chapter{Use Case Specification 1106 - Envoyer une notification}
+\chapter{Spécification \texttt{Use Case 1106} - Envoyer une notification}
 
-\section{Introdcution}
+\section{Introduction}
 
 \subsection{Objectifs de ce document}
 
-Ce document présente les spécifications fonctionnelles du UC1106 - Envoyer une notification.
+Ce document présente les spécifications fonctionnelles du \texttt{U.C. 1106} - Envoyer une notification.
 
 \subsection{Domaine de définition de ce document}
 
@@ -12,7 +12,7 @@ Ce document présente les spécifications fonctionnelles du UC1106 - Envoyer une
 
 \subsection{Identifiant et nom}
 
-UC1106 - Envoyer une notification.
+\texttt{U.C. 1106} - Envoyer une notification.
 
 \subsection{Brève description}
 
@@ -24,7 +24,7 @@ de communication (e-mail, sms, etc.).
 
 \subsection{Flux de base}
 
-Cet UC est déclenché automatiquement un certain nombre d'heure avant un rendez-vous. Quand un patient ou un médecin
+Cet \texttt{U.C.} est déclenché automatiquement un certain nombre d'heure avant un rendez-vous. Quand un patient ou un médecin
 définissent un rendez-vous, un envoi de notification est programmé. L'heure est
 définie grâce aux paramètres utilisateur, de même
 pour le type d'envoi. Le patient peut annuler un rendez-vous, si le rendez-vous est annulé alors que la notification est déjà
@@ -34,10 +34,10 @@ patient.
 
 \subsection{Flux alternatif}
 
-\subsubsection{Interruption du UC}
+\subsubsection{Interruption du \texttt{U.C.}}
 
 Si le système subit une panne, il faudra contacter l'administrateur système.
-Celui-ci lancera un UC pour relancer les notifications non envoyées avec un message d'excuse accompagnant ces
+Celui-ci lancera un \texttt{U.C.} pour relancer les notifications non envoyées avec un message d'excuse accompagnant ces
 notifications.
 
 
@@ -45,16 +45,16 @@ notifications.
 
 \subsection{Acteurs}
 
-Le SIA est l'acteur principale, c'est à dire qu'en cas de panne, il faudra s'adresser au 
-responsable du système.
+Le S.I.A.\footnote{Système d'information automatisé} est l'acteur principale, 
+c'est à dire qu'en cas de panne, il faudra s'adresser au responsable du système.
 
 \subsection{Mode}
 
 Automatisé unitaire.
 
-\subsection{Evènement déclencheur}
+\subsection{Évènement déclencheur}
 
-Après que le patient ou le médecin ait créé un rendez-vous avec l'UC1104. 
+Après que le patient ou le médecin ait créé un rendez-vous à l'aide du \texttt{U.C. 1104}. 
 Un envoi de notification est programmé à une certaine heure avant l'heure du rendez-vous selon les 
 paramètres utilisateur du patient.
 
@@ -68,7 +68,7 @@ Aucune.
 
 \section{Point d'inclusions et d'extensions}
 
-SO. (Sans Objets).
+S.O. (Sans Objets).
 \section{Règles de gestion}
 
 \subsection{Classes concernées}
@@ -85,11 +85,11 @@ Aucune donnée transmise par le système ne nécessite une telle vérification.
 
 \section{Diagramme d'activité}
 
-Ce UC ne possède pas de diagramme d'activité, il est du ressort du système d'agir en fonction
+Ce \texttt{U.C.} ne possède pas de diagramme d'activité, il est du ressort du système d'agir en fonction
 des choix de l'utilisateur.
 
 \section{Interface utilisateur}
 
-Etant un UC automatisé, cet UC ne possède pas d'interface graphique.
+Etant un \texttt{U.C.} automatisé, cet \texttt{U.C.} ne possède pas d'interface graphique.
 
 
