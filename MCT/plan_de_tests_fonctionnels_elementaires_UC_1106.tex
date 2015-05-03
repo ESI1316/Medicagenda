@@ -1,0 +1,94 @@
+\chapter{Plan de test fonctionnels élémentaires \texttt{U.C. 1106}}
+\section{Introduction}
+\subsection{Objectifs du document}
+Ce document présente le plan des tests fonctionnels du \texttt{U.C. 1106} -
+envoyer une notification. 
+\subsection{Domaine de définition du document}
+Ce document ne présente que les scénarios correspondant à l'envoie d’une
+notification (correspondant au diagramme d’activités de la description 
+fonctionnelle du \texttt{U.C.}).
+\subsection{Définitions, acronymes et abréviations}
+Définition INAMI : voir étude de cas et MCD\footnote{\href{../MCD/MCD.pdf}{voir document M.C.D.}}.
+\subsection{Références}
+\begin{itemize}
+	\item[] Étude de cas de l'agenda
+		médical\footnote{\href{../Enonce_Travail_Synthese_14-15.pdf}{voir
+		étude de cas}}
+	\item[] M.C.D. de \texttt{Medicagenda}\footnote{\href{../MCD/MCD.pdf}{voir document M.C.D.}}
+	\item[] M.C.T. de \texttt{Medicagenda}\footnote{\href{./MCT.pdf}{voir document M.C.T.}}
+	\item[] Spécifications fonctionnelles du \texttt{U.C.
+		1106}\footnote{\href{./specifications_fonctionnelles_UC_1106_envoyer_une_notification.pdf}{Voir
+			spécifications fonctionnelles du \texttt{U.C. 1106}}}
+	\end{itemize}
+
+	\section{Types de tests élémentaires fonctionnels}
+	\subsection{Validation des règles de saisie}
+	Aucune car il n’existe pas d’interface dans un \texttt{U.C.} automatisé.
+	\subsection{Validation des règles de calcul}
+	\texttt{S.O.}
+	\subsection{Validation des mises à jour du SI}
+	Aucune, ce \texttt{U.C.} accède à la base de donnée uniquement lecture.
+	\subsection{Validation des outputs utilisateurs}
+	Validation du contenu et de l'affichage des messages de notification. 
+	Ces derniers doivent être exempts d’erreurs au sein de leurs contenus et
+	garantir qu'ils sont adressés au bon patient pour le bon rendez-vous.
+	\subsection{Tests de consolidation}
+	Tous les scénarios peuvent commencer par un encodage de données à 
+	vérifier par l'interface.;
+	\subsection{Tests de saisie}
+	Aucuns, il s’agit d’un \texttt{U.C.} automatisé.
+	\subsection{Cas extrêmes}
+	Vérification des message en cas de relance du SI après une panne.
+	\section{Scénarios de tests}
+	\begin{itemize}
+		\item[] \texttt{scénario 1. Cas 1.1}
+			\begin{itemize}
+				\item description:  \\
+					Le patient possède un rendez-vous pour le lendemain, a fixé
+					la notification à 18h la veille du rendez-vous et comme
+					format de notification, l'email.
+				\item résultat: \\
+					A 18h doit être reçu sur la boîte email du patient, le
+					message de notification indiquant le temps restant avant le
+					rendez-vous et les informations inhérentes à celui-ci.
+			\end{itemize}
+		\item[] \texttt{scénario 1. Cas 1.2}
+			\begin{itemize}
+				\item description:  \\
+					Idem que 1.1, avec la notification par SMS définie en plus. 
+				\item résultat: \\
+					Idem que 1.1 avec la réception au même moment d’un autre
+					message de notification sur la boîte SMS du patient
+			\end{itemize}
+		\item[] \texttt{scénario 2. Cas 2.1}
+			\begin{itemize}
+				\item description:\\
+					Idem que 1.2 sauf que quelques heures avant la notification
+					prévue, le patient annule son rendez-vous.
+				\item résultat: \\
+					Le patient ne doit alors pas être notifié quand viendra
+					l'heure de la notification du rendez-vous avorté. 
+					Mais peu après avoir programmé l'annulation du rendez-vous,
+					doit à la place, recevoir une notification de confirmation
+					d’annulation.
+			\end{itemize}
+		\item[] \texttt{scénario 3. Cas 3.1}
+			\begin{itemize}
+				\item description:\\
+					une panne du SI survient.
+				\item résultat: \\
+					Lors de la remise en marche de celui-ci, les notifications
+					non envoyées à cause de la panne, doivent être complétées
+					par un message d’excuse expliquant le problème technique
+					survenu.
+			\end{itemize}
+	\end{itemize}
+	\newpage
+	\section{Valeurs}
+	\subsection{Valeurs d'initialisation}
+	Il faudra définir à chaque fois tous les enregistrements des tables de la
+	base de données. 
+	Ceci donnera lieu à des programmes de génération de données, et des 
+	programmes permettant de faire évoluer les dates système.
+	\subsection{Valeurs spécifiques}
+	A définir au moment des tests.
