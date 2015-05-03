@@ -33,7 +33,7 @@ Les acteurs externes au SIA complet du \texttt{Medicagenda} se retrouvent dans l
 diagramme de contexte\footnote{Voir~\ref{dc} Diagramme de contexte} : 
 \begin{itemize}
 	\item Patient : Personne qui pourra prendre rendez-vous auprès d'un ou
-		plusieurs médécin pour une ou plusieurs spécialisation.
+		plusieurs médécins pour une ou plusieurs spécialisations.
 \end{itemize}
 \subsection{Acteurs internes}
 \begin{itemize}
@@ -125,7 +125,7 @@ l'un ou par l'autre, doivent être notifiée.
 Le patient peut ainsi s'inscrire à un rendez-vous selon les disponibilités
 proposées par le médecin.
 \paragraph{1102b Modifier un médecin}
-Ce \texttt{U.C.} permet, uniquement au \textbf{médecin}(on éventuellement à un
+Ce \texttt{U.C.} permet, uniquement au \textbf{médecin} (ou éventuellement à un
 service externe tel que l'INAMI) de modifier son compte.
 
 Il peut faire appel aux 
@@ -153,8 +153,8 @@ Ce \texttt{U.C.} permet a une disponibilité de l'agenda d'être à nouveau
 disponible. L'annulation peut être faite par le patient ou par le médecin. 
 \subsubsection{\label{1106}1106 Envoyer une notification}
 Ce \texttt{U.C.} \textbf{automatisé} envoie des notifications aux patients ayant
-un rendez-vous. Celle-ci sera envoyée à l'heure définie par le médecin, si le
-patient n'a pas annulé avant, la consultation lui sera facturée.
+un rendez-vous. Celle-ci sera envoyée à l'heure définie par le patient. Si ce 
+dernier n'a pas annulé avant, la consultation lui sera facturée.
 \subsubsection{\label{1107}1107 Ajouter une spécialité}
 Ce \texttt{U.C.} permet de rajouter des spécialités dans la base de données et
 uniquement par un médecin. Cet ajout doit passer par un organisme, tel que
@@ -162,7 +162,7 @@ l'INAMI, pouvant le confirmer.
 \newpage
 \subsection{Matrice CRUD}
 
-Pour la lisibilité de la matrice, cette dernière a été séparé en deux tableaux.
+Pour la lisibilité de la matrice, cette dernière a été séparée en deux tableaux.
 Seuls les \texttt{U.C.} ayant une action avec une des classes du tableau apparaissent.
 
 \begin{center}

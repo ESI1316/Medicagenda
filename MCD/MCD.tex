@@ -24,7 +24,6 @@ calendriers de médecins.
 
 Énoncé du travail de synthèse sur la gestion de calendriers de médecins.
 
-\subsection{Domaine du projet global}
 \newpage
 \section{Diagramme(s) de classe(s)}
 
@@ -73,7 +72,7 @@ Un client peut ajouter un rendez-vous au calendrier d'un médecin.
 
 \subsubsection{Identifiant}
 
-Médecin.INAMI
+Mèdecin.INAMI
 
 \subsubsection{Attributs}
 
@@ -96,7 +95,7 @@ Il n'est pas supprimé.
 Un compte représente un compte sur le site en ligne. Un compte permet la gestion 
 d'un calendrier ainsi que des paramètres personnels du client. \\
 \texttt{Compte} est la super classe\footnote{selon le principe d'héritage de
-l'Orienté Objet} de \texttt{Compte client} et \texttt{Compte Médecin}. 
+l'Orienté Objet} de \texttt{Compte client} et \texttt{Compte Mèdecin}. 
 
 \subsubsection{Identifiant}
 
@@ -219,7 +218,7 @@ Voir \texttt{Événement}.
 
 \subsubsection{Condition de création / suppression d'un objet ou de la classe}
 
-Une disponibilité est créé lorsqu'un médecin décide d'accepter de nouveaux rendez-vous ou quand un
+Une disponibilité est créée lorsqu'un médecin décide d'accepter de nouveaux rendez-vous ou quand un
 rendez-vous a été annulé par un client. Dans ce cas, le rendez-vous est transformé en disponibilité.
 
 \subsection{Événement}
@@ -337,7 +336,7 @@ Le médecin ne peut posséder deux fois la même spécialité.
 \subsubsection{Définition}
 Associe un calendrier de disponibilités à un médecin.
 \subsubsection{Contraintes d'intégrité}
-Il pourrait éventuellement cumuler plusieurs calendrier pour subdiviser ses
+Il pourrait éventuellement cumuler plusieurs calendriers pour subdiviser ses
 rendez-vous.
 
 \subsection{est assigné à \texttt{Rendez-vous -> Compte patient}}
@@ -354,7 +353,7 @@ Associe un calendrier à des évènements qui le composent.
 
 \subsection{Se transforme en \texttt{Disponibilité -> Rendez-vous}}
 \subsubsection{Définition}
-Associe une disponibilité entant que rendez-vous.
+Associe une disponibilité en tant que rendez-vous.
 \subsubsection{Contraintes d'intégrité}
 Cette association peut être brisée.
 \newpage
