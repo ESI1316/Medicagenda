@@ -1,22 +1,3 @@
-\documentclass[a4paper, 11pt]{report}
-
-\usepackage[utf8]{inputenc}                                                      
-\usepackage[french]{babel}                                                       
-\usepackage[T1]{fontenc}  
-\usepackage[pdftex]{graphicx}                                                    
-\usepackage{url}                                                                 
-\usepackage{longtable}
-\usepackage[bookmarks, colorlinks=false, pdfborder={0 0 0},
-	pdftitle={Medicagenda}, 
-	pdfauthor={Knop Florian, Kriwin Paul, Placentino Simon},
-	pdfsubject={Medicagenda},           
-pdfkeywords={UML, ISO/IEC 19505-1:2012, Medicagenda, Projet, analyse, ESI}]{hyperref}   
-
-\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}    
-
-\begin{document}
-\input{./title_uc_test_1104.tex}
-\tableofcontents
 \chapter{Plan de test fonctionnels élémentaires \texttt{U.C. 1104}}
 \section{Introduction}
 \subsection{Objectifs du document}
@@ -43,7 +24,7 @@ Définition INAMI : voir étude de cas et MCD\footnote{\href{../MCD/MCD.pdf}{voi
 	\paragraph{Remarque}
 	dans le plan de test, il est prévu de faire appel aux \texttt{U.C. 1101a/b} 
 	\textbf{enregistrer un compte patient/médecin} ainsi qu'à l'\texttt{U.C. 1103}
-    \textbf{définir une disponibilité}.
+	\textbf{définir une disponibilité}.
 	Les \texttt{U.C. 1101a/b} et \texttt{1103} devront
 	donc être réalisé et testé avant le présent \texttt{U.C. 1104}.
 
@@ -165,4 +146,3 @@ Définition INAMI : voir étude de cas et MCD\footnote{\href{../MCD/MCD.pdf}{voi
 	Les données spécifiques se retrouveront dans la base de données qui sera
 	mise à la disposition des testeurs. Pour ``peupler'' cette base de données, il
 	sera fait appel à des outils d’encodage rapide de données.
-	\end{document}
